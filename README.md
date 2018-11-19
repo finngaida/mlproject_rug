@@ -1,5 +1,5 @@
 # ML Project: Bike recognition
-By Lennart, Niels, Rohan, Finn
+By Lennart, Niels, Rohit, Finn
 
 ---
 
