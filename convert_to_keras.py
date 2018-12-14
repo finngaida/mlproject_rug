@@ -23,9 +23,9 @@ def main(source_file, output_file, **args):
 				image_id, label, x1, y1, x2, y2 = line.rstrip().split(',')
 				filename = image_id+'.jpg'
 				if(filename in data_dict):
-					data_dict[filename]  = data_dict[filename] + ' ' +x1+','+y1+','+x2+','+y2+','+class_ids[label]
+					data_dict[filename]  = data_dict[filename] + ' ' +x1+','+y1+','+x2+','+y2+','+str(class_ids[label])
 				else:
-					data_dict[filename] = ' '+ x1+','+y1+','+x2+','+y2+','+class_ids[label]
+					data_dict[filename] = ' '+ x1+','+y1+','+x2+','+y2+','+str(class_ids[label])
 		for image, objects in data_dict.items():
 			output.write(image + objects+'\n')
 
