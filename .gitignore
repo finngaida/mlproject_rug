@@ -1,2 +1,4 @@
 __pycache__/
 *.py[cod]
+frcnn_python2/
+frcnn_python3/
