@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7da80f25-4120-4659-8207-7038679d3d0c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/frcnn_python3/keras_frcnn/train_frcnn_kitti.py" afterPath="$PROJECT_DIR$/frcnn_python3/keras_frcnn/train_frcnn_kitti.py" />
-    </list>
+    <list default="true" id="7da80f25-4120-4659-8207-7038679d3d0c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +24,8 @@
       <file leaf-file-name="train_frcnn_kitti.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frcnn_python3/keras_frcnn/train_frcnn_kitti.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="110" column="57" lean-forward="false" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="57" />
+            <state relative-caret-position="210">
+              <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
               <folding>
                 <element signature="e#47#78#0" expanded="true" />
               </folding>
@@ -390,8 +388,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frcnn_python3/keras_frcnn/train_frcnn_kitti.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="110" column="57" lean-forward="false" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="57" />
+        <state relative-caret-position="210">
+          <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
           <folding>
             <element signature="e#47#78#0" expanded="true" />
           </folding>
