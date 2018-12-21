@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7da80f25-4120-4659-8207-7038679d3d0c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/R_User_Library.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/mlproject_rug.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data_visualise-checkpoint.ipynb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/create_file_for_random_n_images.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/data_visualise.ipynb" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/make_training_file_for_frcnn.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/train_data.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/train_data_samples.txt" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/frcnn_python3/keras_frcnn/train_frcnn_kitti.py" afterPath="$PROJECT_DIR$/frcnn_python3/keras_frcnn/train_frcnn_kitti.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,11 +23,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="train_frcnn_kitti.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="train_frcnn_kitti.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frcnn_python3/keras_frcnn/train_frcnn_kitti.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="110" column="51" lean-forward="false" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
+              <caret line="110" column="57" lean-forward="false" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="57" />
               <folding>
                 <element signature="e#47#78#0" expanded="true" />
               </folding>
@@ -48,10 +35,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="simple_parser.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="simple_parser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frcnn_python3/keras_frcnn/keras_frcnn/simple_parser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
+            <state relative-caret-position="540">
               <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -87,8 +74,8 @@
         <option value="$PROJECT_DIR$/frcnn_python2/FasterRCNN_KERAS/train_frcnn.py" />
         <option value="$PROJECT_DIR$/create_file_for_random_n_images.py" />
         <option value="$PROJECT_DIR$/frcnn_python3/keras_frcnn/keras_frcnn/config.py" />
-        <option value="$PROJECT_DIR$/frcnn_python3/keras_frcnn/train_frcnn_kitti.py" />
         <option value="$PROJECT_DIR$/frcnn_python3/keras_frcnn/keras_frcnn/simple_parser.py" />
+        <option value="$PROJECT_DIR$/frcnn_python3/keras_frcnn/train_frcnn_kitti.py" />
       </list>
     </option>
   </component>
@@ -391,22 +378,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frcnn_python3/keras_frcnn/train_frcnn_kitti.py">
+    <entry file="file://$PROJECT_DIR$/frcnn_python3/keras_frcnn/keras_frcnn/simple_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="110" column="51" lean-forward="false" selection-start-line="110" selection-start-column="51" selection-end-line="110" selection-end-column="51" />
+        <state relative-caret-position="540">
+          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
           <folding>
-            <element signature="e#47#78#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frcnn_python3/keras_frcnn/keras_frcnn/simple_parser.py">
+    <entry file="file://$PROJECT_DIR$/frcnn_python3/keras_frcnn/train_frcnn_kitti.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="36" column="16" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+        <state relative-caret-position="240">
+          <caret line="110" column="57" lean-forward="false" selection-start-line="110" selection-start-column="57" selection-end-line="110" selection-end-column="57" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#47#78#0" expanded="true" />
           </folding>
         </state>
       </provider>
