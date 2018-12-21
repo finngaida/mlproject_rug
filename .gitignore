@@ -1,4 +1,6 @@
 __pycache__/
 *.py[cod]
-frcnn_python2/
-frcnn_python3/
+#frcnn_python2/
+#frcnn_python3/
+.idea
+*.DS_Store
