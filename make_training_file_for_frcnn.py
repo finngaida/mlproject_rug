@@ -2,7 +2,8 @@ import pandas as pd
 
 
 path_to_csv = '../MIO-TCD-Localization/gt_train.csv'
-IMG_FOLDER_PATH = '/Users/rohitmalhotra/Desktop/RUG/Semester1b/MachineLearning/project/MIO-TCD-Localization/train/'
+#IMG_FOLDER_PATH = '/Users/rohitmalhotra/Desktop/RUG/Semester1b/MachineLearning/project/MIO-TCD-Localization/train/'
+IMG_FOLDER_PATH = '/data/s3801128/MIO-TCD-Localization/train/'
 IMG_EXTN = '.jpg'
 
 colnames_given= ['IMG_NAME','class_name','x1','y1','x2','y2']
