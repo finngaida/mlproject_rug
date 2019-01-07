@@ -34,7 +34,7 @@ def train_kitti():
     # TODO: the only file should to be change for other data to train
     cfg.model_path = './model/kitti_frcnn_last.hdf5'
     #cfg.simple_label_file = 'kitti_simple_label.txt'
-    cfg.simple_label_file = '../../train_data_samples.txt'  # TODO: Rohit - change to original value
+    cfg.simple_label_file = '../../train_data.txt'  # TODO: Rohit - change to original value
 
     all_images, classes_count, class_mapping = get_data(cfg.simple_label_file)
 
@@ -107,8 +107,8 @@ def train_kitti():
                              metrics={'dense_class_{}'.format(len(classes_count)): 'accuracy'})
     model_all.compile(optimizer='sgd', loss='mae')
 
-    #epoch_length = 1000
-    epoch_length = 10 #TODO:Rohit change to original value
+    epoch_length = 1000
+    #epoch_length = 10 #TODO:Rohit change to original value
     num_epochs = int(cfg.num_epochs)
     iter_num = 0
 

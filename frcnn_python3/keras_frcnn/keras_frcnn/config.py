@@ -57,8 +57,8 @@ class Config:
 
         # params add by me
         self.data_dir = '.data/'
-        #self.num_epochs = 3000
-        self.num_epochs = 2 #TODO: Rohit - change to original value
+        self.num_epochs = 3000
+        #self.num_epochs = 2 #TODO: Rohit - change to original value
 
         self.kitti_simple_label_file = 'kitti_simple_label.txt'
 
