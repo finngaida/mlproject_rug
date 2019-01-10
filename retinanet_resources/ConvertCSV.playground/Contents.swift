@@ -15,7 +15,7 @@ struct Entry {
         self.x = a[2]
         self.y = a[3]
         self.w = a[4]
-        self.h = a[5]
+        self.h = String(a[5].dropLast())
     }
 
     var tranformed: String {
@@ -26,11 +26,13 @@ struct Entry {
 func process(_ handle: FileHandle) throws {
     let url = Bundle.main.url(forResource: "train", withExtension: "csv")!
     let string = try String(contentsOf: url)
-//    var out = ""
+//    var i = 0
     for line in string.components(separatedBy: "\n") {
         let entry = Entry(line.components(separatedBy: ","))
-//        out.append(entry.tranformed)
         handle.write(entry.tranformed.data(using: .utf8)!)
+
+//        guard i < 10 else { return }
+//        i += 1
     }
 }
 
@@ -38,7 +40,6 @@ do {
     let writeURL = playgroundSharedDataDirectory.appendingPathComponent("out.csv")
     let handle = try FileHandle(forWritingTo: writeURL)
     try process(handle)
-//    try out.write(to: writeURL, atomically: true, encoding: .utf8)
 } catch let e {
     print(e)
 }
