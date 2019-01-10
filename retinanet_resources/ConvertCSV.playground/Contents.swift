@@ -19,7 +19,7 @@ struct Entry {
     }
 
     var tranformed: String {
-        return "images/\(name).jpg,\(x),\(y),\(x+w),\(y+h),\(self.class)\n"
+        return "/home/s3838730/data/ml/dataset/MIO-TCD-Localization/train/\(name).jpg,\(x),\(y),\(x+w),\(y+h),\(self.class)\n"
     }
 }
 
