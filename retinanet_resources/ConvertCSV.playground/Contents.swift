@@ -19,7 +19,7 @@ struct Entry {
     }
 
     var tranformed: String {
-        return "images/\(name).jpg,\(x),\(y),\(w),\(h),\(self.class)\n"
+        return "images/\(name).jpg,\(x),\(y),\(x+w),\(y+h),\(self.class)\n"
     }
 }
 
