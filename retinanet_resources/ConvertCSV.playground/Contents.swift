@@ -19,7 +19,9 @@ struct Entry {
     }
 
     var tranformed: String {
-        return "/home/s3838730/data/ml/dataset/MIO-TCD-Localization/train/\(name).jpg,\(x),\(y),\(x+w),\(y+h),\(self.class)\n"
+        let width = Int(x)!+Int(w)!
+        let height = Int(y)!+Int(h)!
+        return "/home/s3838730/data/ml/dataset/MIO-TCD-Localization/train/\(name).jpg,\(x),\(y),\(width),\(height),\(self.class)\n"
     }
 }
 
