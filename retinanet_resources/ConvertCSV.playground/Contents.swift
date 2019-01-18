@@ -19,9 +19,12 @@ struct Entry {
     }
 
     var tranformed: String {
-        let width = Int(x)!+Int(w)!
-        let height = Int(y)!+Int(h)!
-        return "/home/s3838730/data/ml/dataset/MIO-TCD-Localization/train/\(name).jpg,\(x),\(y),\(width),\(height),\(self.class)\n"
+        let x = Int(self.x)!-Int(w)!/2
+        let y = Int(self.y)!-Int(h)!/2
+        let x2 = x+Int(w)!
+        let y2 = y+Int(h)!
+//        return "/Volumes/Rhen/Documents/Developer/MIO-TCD-Localization/train/\(name).jpg,\(x),\(y),\(x2),\(y2),\(self.class)\n"
+        return "/home/s3838730/data/ml/dataset/MIO-TCD-Localization/train/\(name).jpg,\(x),\(y),\(x2),\(y2),\(self.class)\n"
     }
 }
 
@@ -31,6 +34,7 @@ func process(_ handle: FileHandle) throws {
 //    var i = 0
     for line in string.components(separatedBy: "\n") {
         let entry = Entry(line.components(separatedBy: ","))
+        guard entry.class == "bicycle" else { continue }
         handle.write(entry.tranformed.data(using: .utf8)!)
 
 //        guard i < 10 else { return }
@@ -38,8 +42,12 @@ func process(_ handle: FileHandle) throws {
     }
 }
 
+let writeURL = playgroundSharedDataDirectory.appendingPathComponent("out.csv")
+let fm = FileManager.default
+try? fm.removeItem(at: writeURL)
+fm.createFile(atPath: writeURL.path, contents: nil, attributes: nil)
+
 do {
-    let writeURL = playgroundSharedDataDirectory.appendingPathComponent("out.csv")
     let handle = try FileHandle(forWritingTo: writeURL)
     try process(handle)
 } catch let e {
