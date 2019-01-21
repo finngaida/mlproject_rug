@@ -72,7 +72,8 @@ struct Observation {
     }
 
     var tranformed: String {
-        return "/home/s3838730/data/ml/training/image_2/\(name).png,\(rect.x),\(rect.y),\(rect.x2),\(rect.y2),\(self.class)\n"
+//        return "/home/s3838730/data/ml/training/image_2/\(name).png,\(rect.x),\(rect.y),\(rect.x2),\(rect.y2),\(self.class)\n"
+        return "/data/s3801128/training/image_2/\(name).png,\(rect.x),\(rect.y),\(rect.x2),\(rect.y2),\(self.class)\n"
     }
 }
 
@@ -81,7 +82,10 @@ func bikes(in url: URL) throws -> [Observation] {
     let observations = content.components(separatedBy: "\n").dropLast()
     let bikes = observations.filter { s in
         let c = s.components(separatedBy: " ")
-        guard c[0] == "Cyclist", let x = Float(c[4]), let y = Float(c[5]), let x2 = Float(c[6]), let y2 = Float(c[7]), (x2-x) * (y2-y) > 10000 else { return false }
+        guard let x = Float(c[4]), let y = Float(c[5]), let x2 = Float(c[6]), let y2 = Float(c[7]) else { return false }
+        let isCyclist = c[0] == "Cyclist" // && (x2-x) * (y2-y) > 8000
+        let isPedestrian = c[0] == "Pedestrian" // && (x2-x) * (y2-y) > 5000
+        guard isCyclist || isPedestrian else { return false }
         return true
     }
     return bikes.compactMap { Observation(name: url.deletingPathExtension().lastPathComponent, $0, format: .KITTI) }
@@ -93,8 +97,8 @@ func createKITTICSVFile() {
     let limit = 10000
     var numBikes: Int = 0
     let writeURL = playgroundSharedDataDirectory.appendingPathComponent("out.csv")
-//    try? fm.removeItem(at: writeURL)
-//    fm.createFile(atPath: writeURL.path, contents: nil, attributes: nil)
+    try? fm.removeItem(at: writeURL)
+    fm.createFile(atPath: writeURL.path, contents: nil, attributes: nil)
 
     do {
         let urls = try fm.contentsOfDirectory(at: base, includingPropertiesForKeys: [], options: [])
@@ -169,5 +173,5 @@ func comparePredictions() {
     print("Mean IoU: \(meanIoU), mean CT: \(meanCT)")
 }
 
-comparePredictions()
-//createKITTICSVFile()
+//comparePredictions()
+createKITTICSVFile()
