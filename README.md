@@ -13,26 +13,26 @@ In the recent years, automatically analyzing traffic streams has become more and
 
 ## Train Faster R-CNN
 
-cd frcnn
-pip install -r requirements.txt --user
-pip install tensorflow-gpu --user
-python train_frcnn.py --path train_data_bp.txt --input_weight_path <give input weights> --output_weight_path <output weight path> --config_filename <pickle of config file>
+- cd frcnn
+- pip install -r requirements.txt --user
+- pip install tensorflow-gpu --user
+- python train_frcnn.py --path train_data_bp.txt --input_weight_path <give input weights> --output_weight_path <output weight path> --config_filename <pickle of config file>
 
 ## Test Faster R-CNN
 
-python measure_map.py --path test_data_final.txt --config_filename <pickle of config file> --parser simple
+- python measure_map.py --path test_data_final.txt --config_filename <pickle of config file> --parser simple
 
 ## Train RetinaNet
-cd retinanet/keras-retinanet
-pip install Cython==0.28 --user
-pip install configparser --user
-python setup.py build_ext --inplace
+- cd retinanet/keras-retinanet
+- pip install Cython==0.28 --user
+- pip install configparser --user
+- python setup.py build_ext --inplace
 
-python keras_retinanet/bin/train.py --weights snapshots/vgg_model.h5 --freeze-backbone --backbone vgg16  --tensorboard-dir ./logs_vgg16 csv train_data_bp.csv class.csv
+- python keras_retinanet/bin/train.py --weights snapshots/vgg_model.h5 --freeze-backbone --backbone vgg16  --tensorboard-dir ./logs_vgg16 csv train_data_bp.csv class.csv
 
 ## Test RetinaNet
 
-python keras_retinanet/bin/evaluate.py --backbone resnet101 --iou-threshold 0.5 --convert-model csv test_data_final.txt class.csv <path to weights>
+- python keras_retinanet/bin/evaluate.py --backbone resnet101 --iou-threshold 0.5 --convert-model csv test_data_final.txt class.csv <path to weights>
 
 ## Darknet YOLO
 - detect one picture:
