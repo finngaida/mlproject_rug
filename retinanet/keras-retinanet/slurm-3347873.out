@@ -1,0 +1,61 @@
+Requirement already satisfied (use --upgrade to upgrade): numpy in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/numpy-1.11.1-py2.7-linux-x86_64.egg
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Processing /data/s3801128/retinanet/keras-retinanet
+    Complete output from command python setup.py egg_info:
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/local/tmp/pip-BoGlMz-build/setup.py", line 66, in <module>
+        setup_requires = ["cython>=0.28", "numpy>=1.14.0"]
+      File "/software/software/Python/2.7.12-foss-2016a/lib/python2.7/distutils/core.py", line 111, in setup
+        _setup_distribution = dist = klass(attrs)
+      File "build/bdist.linux-x86_64/egg/setuptools/dist.py", line 269, in __init__
+      File "build/bdist.linux-x86_64/egg/setuptools/dist.py", line 313, in fetch_build_eggs
+      File "build/bdist.linux-x86_64/egg/pkg_resources/__init__.py", line 826, in resolve
+      File "build/bdist.linux-x86_64/egg/pkg_resources/__init__.py", line 1085, in best_match
+      File "build/bdist.linux-x86_64/egg/pkg_resources/__init__.py", line 695, in find
+    pkg_resources.VersionConflict: (Cython 0.24 (/apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/Cython-0.24-py2.7-linux-x86_64.egg), Requirement.parse('cython>=0.28'))
+    
+    ----------------------------------------
+Command "python setup.py egg_info" failed with error code 1 in /local/tmp/pip-BoGlMz-build/
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+/software/software/Python/2.7.14-fosscuda-2018a/bin/python: error while loading shared libraries: libcudart.so.9.1: cannot open shared object file: No such file or directory
+
+
+###############################################################################
+Peregrine Cluster
+Job 3347873 for user 's3801128'
+Finished at: Mon Jan 14 14:03:39 CET 2019
+
+Job details:
+============
+
+Name                : Train retinanet multi gpu vgg backbone 500 batch size
+User                : s3801128
+Partition           : gpu
+Nodes               : pg-gpu02
+Cores               : 12
+State               : FAILED
+Submit              : 2019-01-14T13:00:00
+Start               : 2019-01-14T14:03:34
+End                 : 2019-01-14T14:03:39
+Reserved walltime   : 00:30:00
+Used walltime       : 00:00:05
+Used CPU time       : 00:00:03 (efficiency:  6.32%)
+% User (Computation): 49.29%
+% System (I/O)      : 50.69%
+Mem reserved        : 8G/node
+Max Mem used        : 0.00  (pg-gpu02)
+Max Disk Write      : 0.00  (pg-gpu02)
+Max Disk Read       : 0.00  (pg-gpu02)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################
