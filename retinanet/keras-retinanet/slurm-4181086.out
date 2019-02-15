@@ -1,0 +1,155 @@
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "GCCcore/4.9.3"
+
+   Try: "module spider GCCcore/4.9.3" to see how to load the module(s).
+
+
+
+
+
+The following have been reloaded with a version change:
+  1) Python/3.6.4-foss-2018a => Python/2.7.14-foss-2018a
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "GCCcore/4.9.3"
+
+   Try: "module spider GCCcore/4.9.3" to see how to load the module(s).
+
+
+
+
+Collecting numpy==1.14
+  Using cached https://files.pythonhosted.org/packages/0d/8a/e0223a40f980e0442a2045dcf79e4a8a90339593525599a0add318da2428/numpy-1.14.0-cp27-cp27mu-manylinux1_x86_64.whl
+Installing collected packages: numpy
+  Found existing installation: numpy 1.15.4
+    Uninstalling numpy-1.15.4:
+      Successfully uninstalled numpy-1.15.4
+Successfully installed numpy-1.14.0
+You are using pip version 9.0.1, however version 19.0.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting tensorflow-gpu
+  Using cached https://files.pythonhosted.org/packages/3d/21/63bf11a6bb4c1c85d52b259578bec20ef6f8894a13870f8f4f8b69635586/tensorflow_gpu-1.12.0-cp27-cp27mu-manylinux1_x86_64.whl
+Collecting astor>=0.6.0 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/35/6b/11530768cac581a12952a2aad00e1526b89d242d0b9f59534ef6e6a1752f/astor-0.7.1-py2.py3-none-any.whl
+Collecting keras-preprocessing>=1.0.5 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/c0/bf/0315ef6a9fd3fc2346e85b0ff1f5f83ca17073f2c31ac719ab2e4da0d4a3/Keras_Preprocessing-1.0.9-py2.py3-none-any.whl
+Collecting gast>=0.2.0 (from tensorflow-gpu)
+Collecting enum34>=1.1.6 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/c5/db/e56e6b4bbac7c4a06de1c50de6fe1ef3810018ae11732a50f15f62c7d050/enum34-1.1.6-py2-none-any.whl
+Collecting protobuf>=3.6.1 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/b8/c2/b7f587c0aaf8bf2201405e8162323037fe8d17aa21d3c7dda811b8d01469/protobuf-3.6.1-cp27-cp27mu-manylinux1_x86_64.whl
+Collecting six>=1.10.0 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/73/fb/00a976f728d0d1fecfe898238ce23f502a721c0ac0ecfedb80e0d88c64e9/six-1.12.0-py2.py3-none-any.whl
+Collecting absl-py>=0.1.6 (from tensorflow-gpu)
+Collecting backports.weakref>=1.0rc1 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/88/ec/f598b633c3d5ffe267aaada57d961c94fdfa183c5c3ebda2b6d151943db6/backports.weakref-1.0.post1-py2.py3-none-any.whl
+Collecting wheel (from tensorflow-gpu)
+  Downloading https://files.pythonhosted.org/packages/7c/d7/20bd3c501f53fdb0b7387e75c03bd1fce748a1c3dd342fc53744e28e3de1/wheel-0.33.0-py2.py3-none-any.whl
+Collecting termcolor>=1.1.0 (from tensorflow-gpu)
+Collecting tensorboard<1.13.0,>=1.12.0 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/51/ae/9840c4837c6f54034ac942b5344396e8c3d74686a9bd29beafdf633cc221/tensorboard-1.12.2-py2-none-any.whl
+Collecting numpy>=1.13.3 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/e0/b5/63b79fe426433fa1cd110eb04a94ec0c6967e56e5f57c98caf455a5fb6e2/numpy-1.16.1-cp27-cp27mu-manylinux1_x86_64.whl
+Collecting mock>=2.0.0 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/e6/35/f187bdf23be87092bd0f1200d43d23076cee4d0dec109f195173fd3ebc79/mock-2.0.0-py2.py3-none-any.whl
+Collecting keras-applications>=1.0.6 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/90/85/64c82949765cfb246bbdaf5aca2d55f400f792655927a017710a78445def/Keras_Applications-1.0.7-py2.py3-none-any.whl
+Collecting grpcio>=1.8.6 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/ab/13/b4f3d8551e0663ad1a6ba8539057ecd0715bcdf3f2eea235f67b248f37cb/grpcio-1.18.0-cp27-cp27mu-manylinux1_x86_64.whl
+Collecting setuptools (from protobuf>=3.6.1->tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/d1/6a/4b2fcefd2ea0868810e92d519dacac1ddc64a2e53ba9e3422c3b62b378a6/setuptools-40.8.0-py2.py3-none-any.whl
+Collecting markdown>=2.6.8 (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/7a/6b/5600647404ba15545ec37d2f7f58844d690baf2f81f3a60b862e48f29287/Markdown-3.0.1-py2.py3-none-any.whl
+Collecting futures>=3.1.1; python_version < "3" (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/2d/99/b2c4e9d5a30f6471e410a146232b4118e697fa3ffc06d6a65efde84debd0/futures-3.2.0-py2-none-any.whl
+Collecting werkzeug>=0.11.10 (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl
+Collecting funcsigs>=1; python_version < "3.3" (from mock>=2.0.0->tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/69/cb/f5be453359271714c01b9bd06126eaf2e368f1fddfff30818754b5ac2328/funcsigs-1.0.2-py2.py3-none-any.whl
+Collecting pbr>=0.11 (from mock>=2.0.0->tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/8c/7f/fed53b379500fd889707d1f6e61c2a35e12f2de87396894aff89b017d1d6/pbr-5.1.2-py2.py3-none-any.whl
+Collecting h5py (from keras-applications>=1.0.6->tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/53/08/27e4e9a369321862ffdce80ff1770553e9daec65d98befb2e14e7478b698/h5py-2.9.0-cp27-cp27mu-manylinux1_x86_64.whl
+Installing collected packages: astor, six, numpy, keras-preprocessing, gast, enum34, setuptools, protobuf, absl-py, backports.weakref, wheel, termcolor, markdown, futures, werkzeug, grpcio, tensorboard, funcsigs, pbr, mock, h5py, keras-applications, tensorflow-gpu
+Successfully installed absl-py-0.7.0 astor-0.7.1 backports.weakref-1.0.post1 enum34-1.1.6 funcsigs-1.0.2 futures-3.2.0 gast-0.2.2 grpcio-1.18.0 h5py-2.9.0 keras-applications-1.0.7 keras-preprocessing-1.0.9 markdown-3.0.1 mock-2.0.0 numpy-1.16.1 pbr-5.1.2 protobuf-3.6.1 setuptools-40.8.0 six-1.12.0 tensorboard-1.12.2 tensorflow-gpu-1.12.0 termcolor-1.1.0 werkzeug-0.14.1 wheel-0.33.0
+You are using pip version 9.0.1, however version 19.0.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Requirement already satisfied: Cython==0.28 in /home/s3801128/.local/lib/python2.7/site-packages
+You are using pip version 9.0.1, however version 19.0.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Requirement already satisfied: configparser in /home/s3801128/.local/lib/python2.7/site-packages
+You are using pip version 9.0.1, however version 19.0.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+running build_ext
+Traceback (most recent call last):
+  File "setup.py", line 66, in <module>
+    setup_requires = ["cython>=0.28", "numpy>=1.14.0"]
+  File "/home/s3801128/.local/lib/python2.7/site-packages/setuptools/__init__.py", line 145, in setup
+    return distutils.core.setup(**attrs)
+  File "/software/software/Python/2.7.14-foss-2018a/lib/python2.7/distutils/core.py", line 151, in setup
+    dist.run_commands()
+  File "/software/software/Python/2.7.14-foss-2018a/lib/python2.7/distutils/dist.py", line 953, in run_commands
+    self.run_command(cmd)
+  File "/software/software/Python/2.7.14-foss-2018a/lib/python2.7/distutils/dist.py", line 971, in run_command
+    cmd_obj.ensure_finalized()
+  File "/software/software/Python/2.7.14-foss-2018a/lib/python2.7/distutils/cmd.py", line 109, in ensure_finalized
+    self.finalize_options()
+  File "setup.py", line 29, in finalize_options
+    import numpy
+  File "/home/s3801128/.local/lib/python2.7/site-packages/numpy/__init__.py", line 142, in <module>
+    from . import core
+  File "/home/s3801128/.local/lib/python2.7/site-packages/numpy/core/__init__.py", line 67, in <module>
+    raise ImportError(msg.format(path))
+ImportError: Something is wrong with the numpy installation. While importing we detected an older version of numpy in ['/home/s3801128/.local/lib/python2.7/site-packages/numpy']. One method of fixing this is to repeatedly uninstall numpy until none is found, then reinstall this version.
+Traceback (most recent call last):
+  File "keras_retinanet/bin/evaluate.py", line 21, in <module>
+    import keras
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/__init__.py", line 3, in <module>
+    from . import utils
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/utils/__init__.py", line 2, in <module>
+    from . import np_utils
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/utils/np_utils.py", line 6, in <module>
+    import numpy as np
+  File "/home/s3801128/.local/lib/python2.7/site-packages/numpy/__init__.py", line 142, in <module>
+    from . import core
+  File "/home/s3801128/.local/lib/python2.7/site-packages/numpy/core/__init__.py", line 67, in <module>
+    raise ImportError(msg.format(path))
+ImportError: Something is wrong with the numpy installation. While importing we detected an older version of numpy in ['/home/s3801128/.local/lib/python2.7/site-packages/numpy']. One method of fixing this is to repeatedly uninstall numpy until none is found, then reinstall this version.
+
+
+###############################################################################
+Peregrine Cluster
+Job 4181086 for user 's3801128'
+Finished at: Wed Feb 13 20:29:48 CET 2019
+
+Job details:
+============
+
+Name                : 101,0.5,Test retinanet 1 gpu resnet101 backbone
+User                : s3801128
+Partition           : gpu
+Nodes               : pg-gpu01
+Cores               : 12
+State               : COMPLETED
+Submit              : 2019-02-13T20:26:28
+Start               : 2019-02-13T20:27:05
+End                 : 2019-02-13T20:29:47
+Reserved walltime   : 01:00:00
+Used walltime       : 00:02:42
+Used CPU time       : 01:12:30 (efficiency: 223.77%)
+% User (Computation): 58.40%
+% System (I/O)      : 41.61%
+Mem reserved        : 8G/node
+Max Mem used        : 884.01M (pg-gpu01)
+Max Disk Write      : 237.93M (pg-gpu01)
+Max Disk Read       : 207.61M (pg-gpu01)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################

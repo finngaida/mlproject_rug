@@ -2,5 +2,15 @@ __pycache__/
 *.py[cod]
 .idea/*
 *.DS_Store
-frcnn_python2/FasterRCNN_KERAS/VGG_imagenet.npy
-frcnn_python2/FasterRCNN_KERAS/model_frcnn.hdf5
+
+*.c
+*.so
+/.pytest_cache
+/.cache
+
+*.tar
+*.h5
+*.hdf5
+*.zip
+*.csv
+*.weights
