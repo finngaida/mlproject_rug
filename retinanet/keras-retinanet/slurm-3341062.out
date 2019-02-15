@@ -1,0 +1,110 @@
+
+The following have been reloaded with a version change:
+  1) CUDA/7.5.18 => CUDA/9.0.176
+  2) cuDNN/5.0-CUDA-7.5.18 => cuDNN/7.1.4.18-CUDA-9.0.176
+
+Traceback (most recent call last):
+  File "/software/software/Python/3.5.1-foss-2016a/bin/pip", line 7, in <module>
+    from pip import main
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/__init__.py", line 26, in <module>
+    from pip.utils import get_installed_distributions, get_prog
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/utils/__init__.py", line 27, in <module>
+    from pip._vendor import pkg_resources
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 3018, in <module>
+    @_call_aside
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 3004, in _call_aside
+    f(*args, **kwargs)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 3046, in _initialize_master_working_set
+    dist.activate(replace=False)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2578, in activate
+    declare_namespace(pkg)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2152, in declare_namespace
+    _handle_ns(packageName, path_item)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2092, in _handle_ns
+    _rebuild_mod_path(path, packageName, module)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2121, in _rebuild_mod_path
+    orig_path.sort(key=position_in_sys_path)
+AttributeError: '_NamespacePath' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/software/software/Python/3.5.1-foss-2016a/bin/pip", line 7, in <module>
+    from pip import main
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/__init__.py", line 26, in <module>
+    from pip.utils import get_installed_distributions, get_prog
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/utils/__init__.py", line 27, in <module>
+    from pip._vendor import pkg_resources
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 3018, in <module>
+    @_call_aside
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 3004, in _call_aside
+    f(*args, **kwargs)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 3046, in _initialize_master_working_set
+    dist.activate(replace=False)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2578, in activate
+    declare_namespace(pkg)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2152, in declare_namespace
+    _handle_ns(packageName, path_item)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2092, in _handle_ns
+    _rebuild_mod_path(path, packageName, module)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2121, in _rebuild_mod_path
+    orig_path.sort(key=position_in_sys_path)
+AttributeError: '_NamespacePath' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/software/software/Python/3.5.1-foss-2016a/bin/pip", line 7, in <module>
+    from pip import main
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/__init__.py", line 26, in <module>
+    from pip.utils import get_installed_distributions, get_prog
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/utils/__init__.py", line 27, in <module>
+    from pip._vendor import pkg_resources
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 3018, in <module>
+    @_call_aside
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 3004, in _call_aside
+    f(*args, **kwargs)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 3046, in _initialize_master_working_set
+    dist.activate(replace=False)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2578, in activate
+    declare_namespace(pkg)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2152, in declare_namespace
+    _handle_ns(packageName, path_item)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2092, in _handle_ns
+    _rebuild_mod_path(path, packageName, module)
+  File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py", line 2121, in _rebuild_mod_path
+    orig_path.sort(key=position_in_sys_path)
+AttributeError: '_NamespacePath' object has no attribute 'sort'
+/var/spool/slurmd/job3341062/slurm_script: line 21: retinanet-train: command not found
+
+
+###############################################################################
+Peregrine Cluster
+Job 3341062 for user 's3801128'
+Finished at: Sat Jan 12 11:02:42 CET 2019
+
+Job details:
+============
+
+Name                : Train retinanet multi gpu vgg backbone 500 batch size
+User                : s3801128
+Partition           : gpu
+Nodes               : pg-gpu06
+Cores               : 12
+State               : FAILED
+Submit              : 2019-01-12T10:23:07
+Start               : 2019-01-12T11:02:38
+End                 : 2019-01-12T11:02:42
+Reserved walltime   : 2-00:00:00
+Used walltime       :   00:00:04
+Used CPU time       :   00:00:02 (efficiency:  5.62%)
+% User (Computation): 73.46%
+% System (I/O)      : 26.54%
+Mem reserved        : 8G/node
+Max Mem used        : 0.00  (pg-gpu06)
+Max Disk Write      : 0.00  (pg-gpu06)
+Max Disk Read       : 0.00  (pg-gpu06)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################

@@ -1,2 +1,16 @@
 __pycache__/
 *.py[cod]
+.idea/*
+*.DS_Store
+
+*.c
+*.so
+/.pytest_cache
+/.cache
+
+*.tar
+*.h5
+*.hdf5
+*.zip
+*.csv
+*.weights

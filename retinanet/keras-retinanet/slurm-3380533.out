@@ -1,0 +1,79 @@
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "foss/2018a"
+
+   Try: "module spider foss/2018a" to see how to load the module(s).
+
+
+
+
+Requirement already satisfied (use --upgrade to upgrade): tensorflow-gpu==1.7 in /home/s3801128/.local/lib/python2.7/site-packages
+Collecting protobuf>=3.4.0 (from tensorflow-gpu==1.7)
+  Using cached https://files.pythonhosted.org/packages/b8/c2/b7f587c0aaf8bf2201405e8162323037fe8d17aa21d3c7dda811b8d01469/protobuf-3.6.1-cp27-cp27mu-manylinux1_x86_64.whl
+Requirement already satisfied (use --upgrade to upgrade): enum34>=1.1.6 in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/enum34-1.1.6-py2.7.egg (from tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): wheel in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): astor>=0.6.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): backports.weakref>=1.0rc1 in /apps/sandybridge/software/tensorflow/1.2.0-foss-2016a-Python-2.7.12-CUDA-8.0.61/lib/python2.7/site-packages (from tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): mock>=2.0.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): termcolor>=1.1.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): gast>=0.2.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): tensorboard<1.8.0,>=1.7.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): absl-py>=0.1.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): grpcio>=1.8.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): six>=1.10.0 in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/six-1.10.0-py2.7.egg (from tensorflow-gpu==1.7)
+Collecting numpy>=1.13.3 (from tensorflow-gpu==1.7)
+  Using cached https://files.pythonhosted.org/packages/9f/85/163127d3fb0573deb9eca947cfc73aa3618eaaf8656501460574471d114a/numpy-1.16.0-cp27-cp27mu-manylinux1_x86_64.whl
+Requirement already satisfied (use --upgrade to upgrade): setuptools in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/setuptools-23.1.0-py2.7.egg (from protobuf>=3.4.0->tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): funcsigs>=1; python_version < "3.3" in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/funcsigs-1.0.2-py2.7.egg (from mock>=2.0.0->tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): pbr>=0.11 in /home/s3801128/.local/lib/python2.7/site-packages (from mock>=2.0.0->tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): futures>=3.1.1; python_version < "3" in /home/s3801128/.local/lib/python2.7/site-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): bleach==1.5.0 in /apps/sandybridge/software/tensorflow/1.2.0-foss-2016a-Python-2.7.12-CUDA-8.0.61/lib/python2.7/site-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): html5lib==0.9999999 in /apps/sandybridge/software/tensorflow/1.2.0-foss-2016a-Python-2.7.12-CUDA-8.0.61/lib/python2.7/site-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow-gpu==1.7)
+Requirement already satisfied (use --upgrade to upgrade): werkzeug>=0.11.10 in /apps/sandybridge/software/tensorflow/1.2.0-foss-2016a-Python-2.7.12-CUDA-8.0.61/lib/python2.7/site-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow-gpu==1.7)
+Collecting markdown>=2.6.8 (from tensorboard<1.8.0,>=1.7.0->tensorflow-gpu==1.7)
+  Using cached https://files.pythonhosted.org/packages/7a/6b/5600647404ba15545ec37d2f7f58844d690baf2f81f3a60b862e48f29287/Markdown-3.0.1-py2.py3-none-any.whl
+Installing collected packages: protobuf, numpy, markdown
+Successfully installed markdown-2.2.0 numpy-1.11.1 protobuf-3.2.0
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting Cython==0.28
+  Using cached https://files.pythonhosted.org/packages/f7/a1/0ecf3ace2e97eaf63f93931be38361763fff0118aca6b70119dde9867e14/Cython-0.28-cp27-cp27mu-manylinux1_x86_64.whl
+Installing collected packages: Cython
+slurmstepd: error: *** JOB 3380533 ON pg-gpu01 CANCELLED AT 2019-01-16T08:55:24 ***
+
+
+###############################################################################
+Peregrine Cluster
+Job 3380533 for user 's3801128'
+Finished at: Wed Jan 16 08:55:30 CET 2019
+
+Job details:
+============
+
+Name                : Train retinanet multi gpu vgg backbone 500 batch size
+User                : s3801128
+Partition           : gpu
+Nodes               : pg-gpu01
+Cores               : 12
+State               : CANCELLED,CANCELLED by 33801128
+Submit              : 2019-01-16T08:55:13
+Start               : 2019-01-16T08:55:13
+End                 : 2019-01-16T08:55:27
+Reserved walltime   : 00:30:00
+Used walltime       : 00:00:14
+Used CPU time       : 00:00:06 (efficiency:  3.89%)
+% User (Computation): 64.80%
+% System (I/O)      : 35.20%
+Mem reserved        : 8G/node
+Max Mem used        : 0.00  (pg-gpu01)
+Max Disk Write      : 0.00  (pg-gpu01)
+Max Disk Read       : 0.00  (pg-gpu01)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################

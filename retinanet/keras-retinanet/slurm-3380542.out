@@ -1,0 +1,144 @@
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "foss/2018a"
+
+   Try: "module spider foss/2018a" to see how to load the module(s).
+
+
+
+
+Collecting numpy==1.14
+  Downloading https://files.pythonhosted.org/packages/0d/8a/e0223a40f980e0442a2045dcf79e4a8a90339593525599a0add318da2428/numpy-1.14.0-cp27-cp27mu-manylinux1_x86_64.whl (16.9MB)
+Installing collected packages: numpy
+Successfully installed numpy-1.11.1
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Requirement already satisfied (use --upgrade to upgrade): tensorflow-gpu in /home/s3801128/.local/lib/python2.7/site-packages
+Requirement already satisfied (use --upgrade to upgrade): protobuf>=3.4.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): enum34>=1.1.6 in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/enum34-1.1.6-py2.7.egg (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): wheel in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): astor>=0.6.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): backports.weakref>=1.0rc1 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): mock>=2.0.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): termcolor>=1.1.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): gast>=0.2.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): tensorboard<1.8.0,>=1.7.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): absl-py>=0.1.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): grpcio>=1.8.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): six>=1.10.0 in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/six-1.10.0-py2.7.egg (from tensorflow-gpu)
+Collecting numpy>=1.13.3 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/9f/85/163127d3fb0573deb9eca947cfc73aa3618eaaf8656501460574471d114a/numpy-1.16.0-cp27-cp27mu-manylinux1_x86_64.whl
+Requirement already satisfied (use --upgrade to upgrade): setuptools in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/setuptools-23.1.0-py2.7.egg (from protobuf>=3.4.0->tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): funcsigs>=1; python_version < "3.3" in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/funcsigs-1.0.2-py2.7.egg (from mock>=2.0.0->tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): pbr>=0.11 in /home/s3801128/.local/lib/python2.7/site-packages (from mock>=2.0.0->tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): futures>=3.1.1; python_version < "3" in /home/s3801128/.local/lib/python2.7/site-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow-gpu)
+Collecting bleach==1.5.0 (from tensorboard<1.8.0,>=1.7.0->tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/33/70/86c5fec937ea4964184d4d6c4f0b9551564f821e1c3575907639036d9b90/bleach-1.5.0-py2.py3-none-any.whl
+Collecting html5lib==0.9999999 (from tensorboard<1.8.0,>=1.7.0->tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/ae/ae/bcb60402c60932b32dfaf19bb53870b29eda2cd17551ba5639219fb5ebf9/html5lib-0.9999999.tar.gz (889kB)
+Requirement already satisfied (use --upgrade to upgrade): werkzeug>=0.11.10 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): markdown>=2.6.8 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorboard<1.8.0,>=1.7.0->tensorflow-gpu)
+Building wheels for collected packages: html5lib
+  Running setup.py bdist_wheel for html5lib: started
+  Running setup.py bdist_wheel for html5lib: finished with status 'done'
+  Stored in directory: /home/s3801128/.cache/pip/wheels/50/ae/f9/d2b189788efcf61d1ee0e36045476735c838898eef1cad6e29
+Successfully built html5lib
+Installing collected packages: numpy, html5lib, bleach
+Successfully installed bleach-1.5.0 html5lib-0.9999999 numpy-1.11.1
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting Cython==0.28
+  Using cached https://files.pythonhosted.org/packages/f7/a1/0ecf3ace2e97eaf63f93931be38361763fff0118aca6b70119dde9867e14/Cython-0.28-cp27-cp27mu-manylinux1_x86_64.whl
+Installing collected packages: Cython
+Successfully installed Cython-0.24
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Requirement already satisfied (use --upgrade to upgrade): configparser in /home/s3801128/.local/lib/python2.7/site-packages
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Traceback (most recent call last):
+  File "setup.py", line 66, in <module>
+    setup_requires = ["cython>=0.28", "numpy>=1.14.0"]
+  File "/software/software/Python/2.7.12-foss-2016a/lib/python2.7/distutils/core.py", line 111, in setup
+    _setup_distribution = dist = klass(attrs)
+  File "build/bdist.linux-x86_64/egg/setuptools/dist.py", line 269, in __init__
+  File "build/bdist.linux-x86_64/egg/setuptools/dist.py", line 313, in fetch_build_eggs
+  File "build/bdist.linux-x86_64/egg/pkg_resources/__init__.py", line 826, in resolve
+  File "build/bdist.linux-x86_64/egg/pkg_resources/__init__.py", line 1085, in best_match
+  File "build/bdist.linux-x86_64/egg/pkg_resources/__init__.py", line 695, in find
+pkg_resources.VersionConflict: (Cython 0.24 (/apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/Cython-0.24-py2.7-linux-x86_64.egg), Requirement.parse('cython>=0.28'))
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "keras_retinanet/bin/train.py", line 24, in <module>
+    import keras
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/__init__.py", line 3, in <module>
+    from . import utils
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/utils/__init__.py", line 6, in <module>
+    from . import conv_utils
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/utils/conv_utils.py", line 9, in <module>
+    from .. import backend as K
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/backend/__init__.py", line 89, in <module>
+    from .tensorflow_backend import *
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py", line 5, in <module>
+    import tensorflow as tf
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/__init__.py", line 24, in <module>
+    from tensorflow.python import *  # pylint: disable=redefined-builtin
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/__init__.py", line 49, in <module>
+    from tensorflow.python import pywrap_tensorflow
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/pywrap_tensorflow.py", line 74, in <module>
+    raise ImportError(msg)
+ImportError: Traceback (most recent call last):
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/pywrap_tensorflow.py", line 58, in <module>
+    from tensorflow.python.pywrap_tensorflow_internal import *
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 28, in <module>
+    _pywrap_tensorflow_internal = swig_import_helper()
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 24, in swig_import_helper
+    _mod = imp.load_module('_pywrap_tensorflow_internal', fp, pathname, description)
+ImportError: libcublas.so.9.0: cannot open shared object file: No such file or directory
+
+
+Failed to load the native TensorFlow runtime.
+
+See https://www.tensorflow.org/install/install_sources#common_installation_problems
+
+for some common reasons and solutions.  Include the entire stack trace
+above this error message when asking for help.
+
+
+###############################################################################
+Peregrine Cluster
+Job 3380542 for user 's3801128'
+Finished at: Wed Jan 16 09:04:17 CET 2019
+
+Job details:
+============
+
+Name                : Train retinanet multi gpu vgg backbone 500 batch size
+User                : s3801128
+Partition           : gpu
+Nodes               : pg-gpu01
+Cores               : 12
+State               : FAILED
+Submit              : 2019-01-16T09:03:50
+Start               : 2019-01-16T09:03:52
+End                 : 2019-01-16T09:04:17
+Reserved walltime   : 00:30:00
+Used walltime       : 00:00:25
+Used CPU time       : 00:00:14 (efficiency:  4.70%)
+% User (Computation): 67.19%
+% System (I/O)      : 32.80%
+Mem reserved        : 8G/node
+Max Mem used        : 0.00  (pg-gpu01)
+Max Disk Write      : 0.00  (pg-gpu01)
+Max Disk Read       : 0.00  (pg-gpu01)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################

@@ -1,0 +1,142 @@
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "foss/2018a"
+
+   Try: "module spider foss/2018a" to see how to load the module(s).
+
+
+
+
+Collecting tensorflow-gpu
+  Using cached https://files.pythonhosted.org/packages/3d/21/63bf11a6bb4c1c85d52b259578bec20ef6f8894a13870f8f4f8b69635586/tensorflow_gpu-1.12.0-cp27-cp27mu-manylinux1_x86_64.whl
+Requirement already satisfied (use --upgrade to upgrade): enum34>=1.1.6 in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/enum34-1.1.6-py2.7.egg (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): keras-preprocessing>=1.0.5 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): wheel in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): astor>=0.6.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): backports.weakref>=1.0rc1 in /apps/sandybridge/software/tensorflow/1.2.0-foss-2016a-Python-2.7.12-CUDA-8.0.61/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): mock>=2.0.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): tensorboard<1.13.0,>=1.12.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): termcolor>=1.1.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Collecting protobuf>=3.6.1 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/b8/c2/b7f587c0aaf8bf2201405e8162323037fe8d17aa21d3c7dda811b8d01469/protobuf-3.6.1-cp27-cp27mu-manylinux1_x86_64.whl
+Requirement already satisfied (use --upgrade to upgrade): gast>=0.2.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): absl-py>=0.1.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): grpcio>=1.8.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): six>=1.10.0 in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/six-1.10.0-py2.7.egg (from tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): keras-applications>=1.0.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Collecting numpy>=1.13.3 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/9f/85/163127d3fb0573deb9eca947cfc73aa3618eaaf8656501460574471d114a/numpy-1.16.0-cp27-cp27mu-manylinux1_x86_64.whl
+Requirement already satisfied (use --upgrade to upgrade): funcsigs>=1; python_version < "3.3" in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/funcsigs-1.0.2-py2.7.egg (from mock>=2.0.0->tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): pbr>=0.11 in /home/s3801128/.local/lib/python2.7/site-packages (from mock>=2.0.0->tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): futures>=3.1.1; python_version < "3" in /home/s3801128/.local/lib/python2.7/site-packages (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): werkzeug>=0.11.10 in /apps/sandybridge/software/tensorflow/1.2.0-foss-2016a-Python-2.7.12-CUDA-8.0.61/lib/python2.7/site-packages (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+Collecting markdown>=2.6.8 (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/7a/6b/5600647404ba15545ec37d2f7f58844d690baf2f81f3a60b862e48f29287/Markdown-3.0.1-py2.py3-none-any.whl
+Requirement already satisfied (use --upgrade to upgrade): setuptools in /apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/setuptools-23.1.0-py2.7.egg (from protobuf>=3.6.1->tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): h5py in /home/s3801128/.local/lib/python2.7/site-packages (from keras-applications>=1.0.6->tensorflow-gpu)
+Installing collected packages: protobuf, numpy, tensorflow-gpu, markdown
+Successfully installed markdown-2.2.0 numpy-1.11.1 protobuf-3.2.0 tensorflow-gpu-1.12.0
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting Cython==0.28
+  Using cached https://files.pythonhosted.org/packages/f7/a1/0ecf3ace2e97eaf63f93931be38361763fff0118aca6b70119dde9867e14/Cython-0.28-cp27-cp27mu-manylinux1_x86_64.whl
+Installing collected packages: Cython
+Successfully installed Cython-0.24
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Requirement already satisfied (use --upgrade to upgrade): configparser in /home/s3801128/.local/lib/python2.7/site-packages
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Traceback (most recent call last):
+  File "setup.py", line 66, in <module>
+    setup_requires = ["cython>=0.28", "numpy>=1.14.0"]
+  File "/software/software/Python/2.7.12-foss-2016a/lib/python2.7/distutils/core.py", line 111, in setup
+    _setup_distribution = dist = klass(attrs)
+  File "build/bdist.linux-x86_64/egg/setuptools/dist.py", line 269, in __init__
+  File "build/bdist.linux-x86_64/egg/setuptools/dist.py", line 313, in fetch_build_eggs
+  File "build/bdist.linux-x86_64/egg/pkg_resources/__init__.py", line 826, in resolve
+  File "build/bdist.linux-x86_64/egg/pkg_resources/__init__.py", line 1085, in best_match
+  File "build/bdist.linux-x86_64/egg/pkg_resources/__init__.py", line 695, in find
+pkg_resources.VersionConflict: (Cython 0.24 (/apps/sandybridge/software/Python/2.7.12-foss-2016a/lib/python2.7/site-packages/Cython-0.24-py2.7-linux-x86_64.egg), Requirement.parse('cython>=0.28'))
+Using TensorFlow backend.
+keras_retinanet/bin/train.py:353: UserWarning: Using experimental backbone vgg16. Only resnet50 has been properly tested.
+  warnings.warn('Using experimental backbone {}. Only resnet50 has been properly tested.'.format(parsed_args.backbone))
+2019-01-16 08:15:13.730254: I tensorflow/core/common_runtime/gpu/gpu_device.cc:940] Found device 0 with properties: 
+name: Tesla K40m
+major: 3 minor: 5 memoryClockRate (GHz) 0.745
+pciBusID 0000:82:00.0
+Total memory: 11.17GiB
+Free memory: 11.10GiB
+2019-01-16 08:15:13.730336: I tensorflow/core/common_runtime/gpu/gpu_device.cc:961] DMA: 0 
+2019-01-16 08:15:13.730359: I tensorflow/core/common_runtime/gpu/gpu_device.cc:971] 0:   Y 
+2019-01-16 08:15:13.730387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1030] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K40m, pci bus id: 0000:82:00.0)
+Creating model, this may take a second...
+Traceback (most recent call last):
+  File "keras_retinanet/bin/train.py", line 509, in <module>
+    main()
+  File "keras_retinanet/bin/train.py", line 468, in main
+    config=args.config
+  File "keras_retinanet/bin/train.py", line 123, in create_models
+    prediction_model = retinanet_bbox(model=model, anchor_params=anchor_params)
+  File "keras_retinanet/bin/../../keras_retinanet/models/retinanet.py", line 349, in retinanet_bbox
+    )([boxes, classification] + other)
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/engine/base_layer.py", line 457, in __call__
+    output = self.call(inputs, **kwargs)
+  File "keras_retinanet/bin/../../keras_retinanet/layers/filter_detections.py", line 179, in call
+    parallel_iterations=self.parallel_iterations
+  File "keras_retinanet/bin/../../keras_retinanet/backend/tensorflow_backend.py", line 35, in map_fn
+    return tensorflow.map_fn(*args, **kwargs)
+  File "/software/software/tensorflow/1.2.0-foss-2016a-Python-2.7.12-CUDA-8.0.61/lib/python2.7/site-packages/tensorflow/python/ops/functional_ops.py", line 389, in map_fn
+    swap_memory=swap_memory)
+  File "/software/software/tensorflow/1.2.0-foss-2016a-Python-2.7.12-CUDA-8.0.61/lib/python2.7/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2770, in while_loop
+    result = context.BuildLoop(cond, body, loop_vars, shape_invariants)
+  File "/software/software/tensorflow/1.2.0-foss-2016a-Python-2.7.12-CUDA-8.0.61/lib/python2.7/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2599, in BuildLoop
+    pred, body, original_loop_vars, loop_vars, shape_invariants)
+  File "/software/software/tensorflow/1.2.0-foss-2016a-Python-2.7.12-CUDA-8.0.61/lib/python2.7/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2549, in _BuildLoop
+    body_result = body(*packed_vars_for_body)
+  File "/software/software/tensorflow/1.2.0-foss-2016a-Python-2.7.12-CUDA-8.0.61/lib/python2.7/site-packages/tensorflow/python/ops/functional_ops.py", line 379, in compute
+    packed_fn_values = fn(packed_values)
+  File "keras_retinanet/bin/../../keras_retinanet/layers/filter_detections.py", line 171, in _filter_detections
+    nms_threshold         = self.nms_threshold,
+  File "keras_retinanet/bin/../../keras_retinanet/layers/filter_detections.py", line 99, in filter_detections
+    boxes    = backend.pad(boxes, [[0, pad_size], [0, 0]], constant_values=-1)
+  File "keras_retinanet/bin/../../keras_retinanet/backend/tensorflow_backend.py", line 41, in pad
+    return tensorflow.pad(*args, **kwargs)
+TypeError: pad() got an unexpected keyword argument 'constant_values'
+
+
+###############################################################################
+Peregrine Cluster
+Job 3380469 for user 's3801128'
+Finished at: Wed Jan 16 08:17:04 CET 2019
+
+Job details:
+============
+
+Name                : Train retinanet multi gpu vgg backbone 500 batch size
+User                : s3801128
+Partition           : gpu
+Nodes               : pg-gpu03
+Cores               : 12
+State               : FAILED
+Submit              : 2019-01-16T07:15:11
+Start               : 2019-01-16T08:13:58
+End                 : 2019-01-16T08:17:04
+Reserved walltime   : 00:30:00
+Used walltime       : 00:03:06
+Used CPU time       : 01:13:17 (efficiency: 197.00%)
+% User (Computation): 55.08%
+% System (I/O)      : 44.93%
+Mem reserved        : 8G/node
+Max Mem used        : 124.77M (pg-gpu03)
+Max Disk Write      : 2.39G (pg-gpu03)
+Max Disk Read       : 1.68G (pg-gpu03)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################
