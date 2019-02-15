@@ -16,11 +16,11 @@ In the recent years, automatically analyzing traffic streams has become more and
 - cd frcnn
 - pip install -r requirements.txt --user
 - pip install tensorflow-gpu --user
-- python train_frcnn.py --path train_data_bp.txt --input_weight_path <give input weights> --output_weight_path <output weight path> --config_filename <pickle of config file>
+- python train_frcnn.py --path train_data_bp.txt --input_weight_path <\give input weights\> --output_weight_path <\output weight path> --config_filename <\pickle of config file>
 
 ## Test Faster R-CNN
 
-- python measure_map.py --path test_data_final.txt --config_filename <pickle of config file> --parser simple
+- python measure_map.py --path test_data_final.txt --config_filename <\pickle of config file> --parser simple
 
 ## Train RetinaNet
 - cd retinanet/keras-retinanet
@@ -32,7 +32,7 @@ In the recent years, automatically analyzing traffic streams has become more and
 
 ## Test RetinaNet
 
-- python keras_retinanet/bin/evaluate.py --backbone resnet101 --iou-threshold 0.5 --convert-model csv test_data_final.txt class.csv <path to weights>
+- python keras_retinanet/bin/evaluate.py --backbone resnet101 --iou-threshold 0.5 --convert-model csv test_data_final.txt class.csv <\path to weights>
 
 ## Darknet YOLO
 - detect one picture:
