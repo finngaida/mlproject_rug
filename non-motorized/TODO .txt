@@ -1,0 +1,6 @@
+generate the yolodarknet text files
+generate the predictions while using the standard model 
+train using the training data and generate predictions
+
+
+RIGHT DATA IS SOON IN: /data/s2589036/ml/ml/darknet/data/non-motorized/non-motorized-files
