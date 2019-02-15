@@ -1,0 +1,10 @@
+training on own data: 
+	make the files for all images (in data-folder: /data/s2589036/ml/ml/yolodarknetdata)
+	change: darknet/scripts/voc_label.py (make sure this points to the right directories and change all categories and stuff)
+	run: python darknet/scripts/voc_label.py 
+	run: cat 2007_train.txt 2007_val.txt 2012_*.txt > train.txt (or other names)
+	change: cfg/voc.data to point to all the right newly generates files
+	use: wget https://pjreddie.com/media/files/darknet53.conv.74
+
+	run:./darknet detector train cfg/voc.data cfg/yolov3-voc.cfg darknet53.conv.74
+
