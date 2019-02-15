@@ -1,0 +1,124 @@
+
+The following have been reloaded with a version change:
+  1) FFTW/3.3.7-gompic-2018a => FFTW/3.3.7-gompi-2018a
+  2) OpenMPI/2.1.2-gcccuda-2018a => OpenMPI/2.1.2-GCC-6.4.0-2.28
+  3) ScaLAPACK/2.0.2-gompic-2018a-OpenBLAS-0.2.20 => ScaLAPACK/2.0.2-gompi-2018a-OpenBLAS-0.2.20
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "GCCcore/4.9.3"
+
+   Try: "module spider GCCcore/4.9.3" to see how to load the module(s).
+
+
+
+
+
+The following have been reloaded with a version change:
+  1) CUDA/8.0.61 => CUDA/9.0.176
+  2) cuDNN/6.0-CUDA-8.0.61 => cuDNN/7.1.4.18-CUDA-9.0.176
+
+Requirement already satisfied: h5py in /home/s3801128/.local/lib/python3.6/site-packages (from -r requirements.txt (line 1))
+Requirement already satisfied: Keras==2.0.3 in /home/s3801128/.local/lib/python3.6/site-packages (from -r requirements.txt (line 2))
+Requirement already satisfied: numpy in /apps/haswell/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/numpy-1.14.0-py3.6-linux-x86_64.egg (from -r requirements.txt (line 3))
+Requirement already satisfied: opencv-python in /home/s3801128/.local/lib/python3.6/site-packages (from -r requirements.txt (line 4))
+Requirement already satisfied: sklearn in /home/s3801128/.local/lib/python3.6/site-packages (from -r requirements.txt (line 5))
+Requirement already satisfied: six in /apps/haswell/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/six-1.11.0-py3.6.egg (from h5py->-r requirements.txt (line 1))
+Requirement already satisfied: theano in /home/s3801128/.local/lib/python3.6/site-packages (from Keras==2.0.3->-r requirements.txt (line 2))
+Requirement already satisfied: pyyaml in /home/s3801128/.local/lib/python3.6/site-packages (from Keras==2.0.3->-r requirements.txt (line 2))
+Requirement already satisfied: scikit-learn in /home/s3801128/.local/lib/python3.6/site-packages (from sklearn->-r requirements.txt (line 5))
+Requirement already satisfied: scipy>=0.14 in /apps/haswell/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/scipy-1.0.0-py3.6-linux-x86_64.egg (from theano->Keras==2.0.3->-r requirements.txt (line 2))
+You are using pip version 9.0.1, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting tensorflow-gpu
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/55/7e/bec4d62e9dc95e828922c6cec38acd9461af8abe749f7c9def25ec4b2fdb/tensorflow_gpu-1.12.0-cp36-cp36m-manylinux1_x86_64.whl (281.7MB)
+Requirement already satisfied: numpy>=1.13.3 in /apps/haswell/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/numpy-1.14.0-py3.6-linux-x86_64.egg (from tensorflow-gpu)
+Requirement already satisfied: absl-py>=0.1.6 in /home/s3801128/.local/lib/python3.6/site-packages (from tensorflow-gpu)
+Requirement already satisfied: protobuf>=3.6.1 in /home/s3801128/.local/lib/python3.6/site-packages (from tensorflow-gpu)
+Requirement already satisfied: tensorboard<1.13.0,>=1.12.0 in /home/s3801128/.local/lib/python3.6/site-packages (from tensorflow-gpu)
+Requirement already satisfied: keras-applications>=1.0.6 in /home/s3801128/.local/lib/python3.6/site-packages (from tensorflow-gpu)
+Requirement already satisfied: termcolor>=1.1.0 in /home/s3801128/.local/lib/python3.6/site-packages (from tensorflow-gpu)
+Requirement already satisfied: six>=1.10.0 in /apps/haswell/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/six-1.11.0-py3.6.egg (from tensorflow-gpu)
+Requirement already satisfied: gast>=0.2.0 in /home/s3801128/.local/lib/python3.6/site-packages (from tensorflow-gpu)
+Requirement already satisfied: grpcio>=1.8.6 in /home/s3801128/.local/lib/python3.6/site-packages (from tensorflow-gpu)
+Requirement already satisfied: astor>=0.6.0 in /home/s3801128/.local/lib/python3.6/site-packages (from tensorflow-gpu)
+Requirement already satisfied: keras-preprocessing>=1.0.5 in /home/s3801128/.local/lib/python3.6/site-packages (from tensorflow-gpu)
+Requirement already satisfied: wheel>=0.26 in /home/s3801128/.local/lib/python3.6/site-packages (from tensorflow-gpu)
+Requirement already satisfied: setuptools in /apps/haswell/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages (from protobuf>=3.6.1->tensorflow-gpu)
+Requirement already satisfied: werkzeug>=0.11.10 in /home/s3801128/.local/lib/python3.6/site-packages (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+Requirement already satisfied: markdown>=2.6.8 in /home/s3801128/.local/lib/python3.6/site-packages (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+Requirement already satisfied: h5py in /home/s3801128/.local/lib/python3.6/site-packages (from keras-applications>=1.0.6->tensorflow-gpu)
+Installing collected packages: tensorflow-gpu
+Exception:
+Traceback (most recent call last):
+  File "/software/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/pip/basecommand.py", line 215, in main
+    status = self.run(options, args)
+  File "/software/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/pip/commands/install.py", line 342, in run
+    prefix=options.prefix_path,
+  File "/software/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/pip/req/req_set.py", line 784, in install
+    **kwargs
+  File "/software/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/pip/req/req_install.py", line 851, in install
+    self.move_wheel_files(self.source_dir, root=root, prefix=prefix)
+  File "/software/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/pip/req/req_install.py", line 1064, in move_wheel_files
+    isolated=self.isolated,
+  File "/software/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/pip/wheel.py", line 345, in move_wheel_files
+    clobber(source, lib_dir, True)
+  File "/software/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/pip/wheel.py", line 316, in clobber
+    ensure_dir(destdir)
+  File "/software/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/pip/utils/__init__.py", line 83, in ensure_dir
+    os.makedirs(path)
+  File "/software/software/Python/3.6.4-foss-2018a/lib/python3.6/os.py", line 220, in makedirs
+    mkdir(name, mode)
+PermissionError: [Errno 13] Permission denied: '/software/software/Python/3.6.4-foss-2018a/lib/python3.6/site-packages/tensorflow_gpu-1.12.0.dist-info'
+You are using pip version 9.0.1, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Using TensorFlow backend.
+WARNING:tensorflow:From /home/s3801128/.local/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:1064: calling reduce_prod (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2019-01-11 02:31:00.506157: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+WARNING:tensorflow:From /home/s3801128/.local/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:1046: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /home/s3801128/.local/lib/python3.6/site-packages/keras/backend/tensorflow_backend.py:1153: calling reduce_mean (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+slurmstepd: error: *** JOB 3330039 ON pg-gpu02 CANCELLED AT 2019-01-11T02:36:43 ***
+
+
+###############################################################################
+Peregrine Cluster
+Job 3330039 for user 's3801128'
+Finished at: Fri Jan 11 02:36:45 CET 2019
+
+Job details:
+============
+
+Name                : Train tf FRCNN Keras model with only bp data resnet50 as backbone not training shared layers
+User                : s3801128
+Partition           : gpu
+Nodes               : pg-gpu02
+Cores               : 12
+State               : CANCELLED,CANCELLED by 33801128
+Submit              : 2019-01-10T23:20:01
+Start               : 2019-01-11T02:27:39
+End                 : 2019-01-11T02:36:44
+Reserved walltime   :   12:00:00
+Used walltime       :   00:09:05
+Used CPU time       : 3-11:22:59 (efficiency: 4589.89%)
+% User (Computation): 85.26%
+% System (I/O)      : 14.74%
+Mem reserved        : 8G/node
+Max Mem used        : 5.22G (pg-gpu02)
+Max Disk Write      : 1.49G (pg-gpu02)
+Max Disk Read       : 582.68M (pg-gpu02)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################
