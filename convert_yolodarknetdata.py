@@ -13,13 +13,24 @@ import pickle
 
 def classnumber(veh_class):
 	#print(veh_class)
-	dictionary = {"pedestrian": "1", "bicycle":"2", "motorized_vehicle":"3", "pickup_truck":"4", "articulated_truck":"5", "car": "6", "bus": "7", "work_van": "8","single_unit_truck":"9",
-	              "non-motorized_vehicle":"10", "motorcycle":"11"}
+	dictionary = {
+	"articulated_truck": 1,
+	"bicycle": 2,
+	"bus": 3,
+	"car": 4,
+	"motorcycle": 5,
+	"motorized_vehicle": 6,
+	"non-motorized_vehicle": 7,
+	"pedestrian": 8,
+	"pickup_truck": 9,
+	"single_unit_truck": 10,
+	"work_van": 11
+	}
 
 	return str(dictionary[veh_class])
 
 def makedict():
-	file = open("gt_train.txt","r",encoding="UTF-16")
+	file = open("data/MIO-TCD-Localization/gt_train.txt","r",encoding="UTF-16")
 	filedictionary = {}
 	for line in file.readlines():
 		params = line.rstrip("\n").split(",")
@@ -37,7 +48,7 @@ def makedict():
 		xmid = round((x1 + x2)/2 + 1)
 		ymid = round((y1 + y2)/2 + 1)
 
-		newline = type + " " + str(xmid) + " " + str(ymid) + " " + str(width) + " " + str(height) + "\n"
+		newline = classnumber(type) + " " + str(xmid) + " " + str(ymid) + " " + str(width) + " " + str(height) + "\n"
 		if picture not in filedictionary:
 			filedictionary[picture] = [newline]
 		else:
@@ -51,9 +62,9 @@ def main():
 	filedictionary = pickle.load(open("filedictionary.pickle","rb"))
 	for picture in filedictionary:
 		filename = picture+".txt"
-		file = open("nielsfiles/"+filename, "w")
+		file = open("yolodarknetdata/"+filename, "w")
 		for item in filedictionary[picture]:
-			if item != filedictionary[picture][-1]
+			if item != filedictionary[picture][-1]:
 				file.write(item+"\n")
 			else:
 				file.write(item)
