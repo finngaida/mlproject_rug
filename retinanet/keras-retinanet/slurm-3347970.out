@@ -1,0 +1,107 @@
+Traceback (most recent call last):
+  File "/software/software/Python/3.5.2-foss-2016a/bin/pip", line 5, in <module>
+    from pkg_resources import load_entry_point
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 664, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 634, in _load_backward_compatible
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2927, in <module>
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2913, in _call_aside
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2952, in _initialize_master_working_set
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 956, in subscribe
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2952, in <lambda>
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2515, in activate
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2097, in declare_namespace
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2047, in _handle_ns
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2066, in _rebuild_mod_path
+AttributeError: '_NamespacePath' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/software/software/Python/3.5.2-foss-2016a/bin/pip", line 5, in <module>
+    from pkg_resources import load_entry_point
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 664, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 634, in _load_backward_compatible
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2927, in <module>
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2913, in _call_aside
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2952, in _initialize_master_working_set
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 956, in subscribe
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2952, in <lambda>
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2515, in activate
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2097, in declare_namespace
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2047, in _handle_ns
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2066, in _rebuild_mod_path
+AttributeError: '_NamespacePath' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/software/software/Python/3.5.2-foss-2016a/bin/pip", line 5, in <module>
+    from pkg_resources import load_entry_point
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 664, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 634, in _load_backward_compatible
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2927, in <module>
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2913, in _call_aside
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2952, in _initialize_master_working_set
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 956, in subscribe
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2952, in <lambda>
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2515, in activate
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2097, in declare_namespace
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2047, in _handle_ns
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2066, in _rebuild_mod_path
+AttributeError: '_NamespacePath' object has no attribute 'sort'
+Traceback (most recent call last):
+  File "/software/software/Python/3.5.2-foss-2016a/bin/pip", line 5, in <module>
+    from pkg_resources import load_entry_point
+  File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 664, in _load_unlocked
+  File "<frozen importlib._bootstrap>", line 634, in _load_backward_compatible
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2927, in <module>
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2913, in _call_aside
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2952, in _initialize_master_working_set
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 956, in subscribe
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2952, in <lambda>
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2515, in activate
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2097, in declare_namespace
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2047, in _handle_ns
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2066, in _rebuild_mod_path
+AttributeError: '_NamespacePath' object has no attribute 'sort'
+/software/software/Python/2.7.14-fosscuda-2018a/bin/python: error while loading shared libraries: libcudart.so.9.1: cannot open shared object file: No such file or directory
+
+
+###############################################################################
+Peregrine Cluster
+Job 3347970 for user 's3801128'
+Finished at: Mon Jan 14 16:03:10 CET 2019
+
+Job details:
+============
+
+Name                : Train retinanet multi gpu vgg backbone 500 batch size
+User                : s3801128
+Partition           : gpu
+Nodes               : pg-gpu04
+Cores               : 12
+State               : FAILED
+Submit              : 2019-01-14T14:16:32
+Start               : 2019-01-14T16:03:06
+End                 : 2019-01-14T16:03:10
+Reserved walltime   : 00:30:00
+Used walltime       : 00:00:04
+Used CPU time       : 00:00:02 (efficiency:  5.94%)
+% User (Computation): 72.90%
+% System (I/O)      : 27.06%
+Mem reserved        : 8G/node
+Max Mem used        : 0.00  (pg-gpu04)
+Max Disk Write      : 0.00  (pg-gpu04)
+Max Disk Read       : 0.00  (pg-gpu04)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################

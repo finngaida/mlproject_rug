@@ -1,0 +1,1417 @@
+layer     filters    size              input                output
+    0 conv     32  3 x 3 / 1   608 x 608 x   3   ->   608 x 608 x  32  0.639 BFLOPs
+    1 conv     64  3 x 3 / 2   608 x 608 x  32   ->   304 x 304 x  64  3.407 BFLOPs
+    2 conv     32  1 x 1 / 1   304 x 304 x  64   ->   304 x 304 x  32  0.379 BFLOPs
+    3 conv     64  3 x 3 / 1   304 x 304 x  32   ->   304 x 304 x  64  3.407 BFLOPs
+    4 res    1                 304 x 304 x  64   ->   304 x 304 x  64
+    5 conv    128  3 x 3 / 2   304 x 304 x  64   ->   152 x 152 x 128  3.407 BFLOPs
+    6 conv     64  1 x 1 / 1   152 x 152 x 128   ->   152 x 152 x  64  0.379 BFLOPs
+    7 conv    128  3 x 3 / 1   152 x 152 x  64   ->   152 x 152 x 128  3.407 BFLOPs
+    8 res    5                 152 x 152 x 128   ->   152 x 152 x 128
+    9 conv     64  1 x 1 / 1   152 x 152 x 128   ->   152 x 152 x  64  0.379 BFLOPs
+   10 conv    128  3 x 3 / 1   152 x 152 x  64   ->   152 x 152 x 128  3.407 BFLOPs
+   11 res    8                 152 x 152 x 128   ->   152 x 152 x 128
+   12 conv    256  3 x 3 / 2   152 x 152 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   13 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   14 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   15 res   12                  76 x  76 x 256   ->    76 x  76 x 256
+   16 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   17 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   18 res   15                  76 x  76 x 256   ->    76 x  76 x 256
+   19 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   20 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   21 res   18                  76 x  76 x 256   ->    76 x  76 x 256
+   22 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   23 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   24 res   21                  76 x  76 x 256   ->    76 x  76 x 256
+   25 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   26 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   27 res   24                  76 x  76 x 256   ->    76 x  76 x 256
+   28 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   29 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   30 res   27                  76 x  76 x 256   ->    76 x  76 x 256
+   31 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   32 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   33 res   30                  76 x  76 x 256   ->    76 x  76 x 256
+   34 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   35 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   36 res   33                  76 x  76 x 256   ->    76 x  76 x 256
+   37 conv    512  3 x 3 / 2    76 x  76 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   38 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   39 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   40 res   37                  38 x  38 x 512   ->    38 x  38 x 512
+   41 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   42 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   43 res   40                  38 x  38 x 512   ->    38 x  38 x 512
+   44 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   45 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   46 res   43                  38 x  38 x 512   ->    38 x  38 x 512
+   47 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   48 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   49 res   46                  38 x  38 x 512   ->    38 x  38 x 512
+   50 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   51 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   52 res   49                  38 x  38 x 512   ->    38 x  38 x 512
+   53 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   54 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   55 res   52                  38 x  38 x 512   ->    38 x  38 x 512
+   56 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   57 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   58 res   55                  38 x  38 x 512   ->    38 x  38 x 512
+   59 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   60 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   61 res   58                  38 x  38 x 512   ->    38 x  38 x 512
+   62 conv   1024  3 x 3 / 2    38 x  38 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   63 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   64 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   65 res   62                  19 x  19 x1024   ->    19 x  19 x1024
+   66 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   67 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   68 res   65                  19 x  19 x1024   ->    19 x  19 x1024
+   69 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   70 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   71 res   68                  19 x  19 x1024   ->    19 x  19 x1024
+   72 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   73 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   74 res   71                  19 x  19 x1024   ->    19 x  19 x1024
+   75 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   76 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   77 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   78 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   79 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   80 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   81 conv    255  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 255  0.189 BFLOPs
+   82 yolo
+   83 route  79
+   84 conv    256  1 x 1 / 1    19 x  19 x 512   ->    19 x  19 x 256  0.095 BFLOPs
+   85 upsample            2x    19 x  19 x 256   ->    38 x  38 x 256
+   86 route  85 61
+   87 conv    256  1 x 1 / 1    38 x  38 x 768   ->    38 x  38 x 256  0.568 BFLOPs
+   88 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   89 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   90 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   91 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   92 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   93 conv    255  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 255  0.377 BFLOPs
+   94 yolo
+   95 route  91
+   96 conv    128  1 x 1 / 1    38 x  38 x 256   ->    38 x  38 x 128  0.095 BFLOPs
+   97 upsample            2x    38 x  38 x 128   ->    76 x  76 x 128
+   98 route  97 36
+   99 conv    128  1 x 1 / 1    76 x  76 x 384   ->    76 x  76 x 128  0.568 BFLOPs
+  100 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+  101 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+  102 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+  103 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+  104 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+  105 conv    255  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 255  0.754 BFLOPs
+  106 yolo
+Loading weights from darknet53.conv.74...0,1
+yolov3
+Done!
+layer     filters    size              input                output
+    0 conv     32  3 x 3 / 1   608 x 608 x   3   ->   608 x 608 x  32  0.639 BFLOPs
+    1 conv     64  3 x 3 / 2   608 x 608 x  32   ->   304 x 304 x  64  3.407 BFLOPs
+    2 conv     32  1 x 1 / 1   304 x 304 x  64   ->   304 x 304 x  32  0.379 BFLOPs
+    3 conv     64  3 x 3 / 1   304 x 304 x  32   ->   304 x 304 x  64  3.407 BFLOPs
+    4 res    1                 304 x 304 x  64   ->   304 x 304 x  64
+    5 conv    128  3 x 3 / 2   304 x 304 x  64   ->   152 x 152 x 128  3.407 BFLOPs
+    6 conv     64  1 x 1 / 1   152 x 152 x 128   ->   152 x 152 x  64  0.379 BFLOPs
+    7 conv    128  3 x 3 / 1   152 x 152 x  64   ->   152 x 152 x 128  3.407 BFLOPs
+    8 res    5                 152 x 152 x 128   ->   152 x 152 x 128
+    9 conv     64  1 x 1 / 1   152 x 152 x 128   ->   152 x 152 x  64  0.379 BFLOPs
+   10 conv    128  3 x 3 / 1   152 x 152 x  64   ->   152 x 152 x 128  3.407 BFLOPs
+   11 res    8                 152 x 152 x 128   ->   152 x 152 x 128
+   12 conv    256  3 x 3 / 2   152 x 152 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   13 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   14 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   15 res   12                  76 x  76 x 256   ->    76 x  76 x 256
+   16 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   17 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   18 res   15                  76 x  76 x 256   ->    76 x  76 x 256
+   19 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   20 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   21 res   18                  76 x  76 x 256   ->    76 x  76 x 256
+   22 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   23 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   24 res   21                  76 x  76 x 256   ->    76 x  76 x 256
+   25 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   26 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   27 res   24                  76 x  76 x 256   ->    76 x  76 x 256
+   28 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   29 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   30 res   27                  76 x  76 x 256   ->    76 x  76 x 256
+   31 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   32 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   33 res   30                  76 x  76 x 256   ->    76 x  76 x 256
+   34 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+   35 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+   36 res   33                  76 x  76 x 256   ->    76 x  76 x 256
+   37 conv    512  3 x 3 / 2    76 x  76 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   38 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   39 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   40 res   37                  38 x  38 x 512   ->    38 x  38 x 512
+   41 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   42 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   43 res   40                  38 x  38 x 512   ->    38 x  38 x 512
+   44 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   45 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   46 res   43                  38 x  38 x 512   ->    38 x  38 x 512
+   47 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   48 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   49 res   46                  38 x  38 x 512   ->    38 x  38 x 512
+   50 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   51 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   52 res   49                  38 x  38 x 512   ->    38 x  38 x 512
+   53 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   54 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   55 res   52                  38 x  38 x 512   ->    38 x  38 x 512
+   56 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   57 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   58 res   55                  38 x  38 x 512   ->    38 x  38 x 512
+   59 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   60 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   61 res   58                  38 x  38 x 512   ->    38 x  38 x 512
+   62 conv   1024  3 x 3 / 2    38 x  38 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   63 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   64 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   65 res   62                  19 x  19 x1024   ->    19 x  19 x1024
+   66 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   67 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   68 res   65                  19 x  19 x1024   ->    19 x  19 x1024
+   69 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   70 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   71 res   68                  19 x  19 x1024   ->    19 x  19 x1024
+   72 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   73 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   74 res   71                  19 x  19 x1024   ->    19 x  19 x1024
+   75 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   76 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   77 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   78 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   79 conv    512  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 512  0.379 BFLOPs
+   80 conv   1024  3 x 3 / 1    19 x  19 x 512   ->    19 x  19 x1024  3.407 BFLOPs
+   81 conv    255  1 x 1 / 1    19 x  19 x1024   ->    19 x  19 x 255  0.189 BFLOPs
+   82 yolo
+   83 route  79
+   84 conv    256  1 x 1 / 1    19 x  19 x 512   ->    19 x  19 x 256  0.095 BFLOPs
+   85 upsample            2x    19 x  19 x 256   ->    38 x  38 x 256
+   86 route  85 61
+   87 conv    256  1 x 1 / 1    38 x  38 x 768   ->    38 x  38 x 256  0.568 BFLOPs
+   88 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   89 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   90 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   91 conv    256  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 256  0.379 BFLOPs
+   92 conv    512  3 x 3 / 1    38 x  38 x 256   ->    38 x  38 x 512  3.407 BFLOPs
+   93 conv    255  1 x 1 / 1    38 x  38 x 512   ->    38 x  38 x 255  0.377 BFLOPs
+   94 yolo
+   95 route  91
+   96 conv    128  1 x 1 / 1    38 x  38 x 256   ->    38 x  38 x 128  0.095 BFLOPs
+   97 upsample            2x    38 x  38 x 128   ->    76 x  76 x 128
+   98 route  97 36
+   99 conv    128  1 x 1 / 1    76 x  76 x 384   ->    76 x  76 x 128  0.568 BFLOPs
+  100 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+  101 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+  102 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+  103 conv    128  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 128  0.379 BFLOPs
+  104 conv    256  3 x 3 / 1    76 x  76 x 128   ->    76 x  76 x 256  3.407 BFLOPs
+  105 conv    255  1 x 1 / 1    76 x  76 x 256   ->    76 x  76 x 255  0.754 BFLOPs
+  106 yolo
+Loading weights from darknet53.conv.74...Done!
+Learning Rate: 0.002, Momentum: 0.9, Decay: 0.0005
+Resizing
+448
+Loaded: 0.464786 seconds
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534168, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518049, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416621, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532785, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519210, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417190, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534875, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518772, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416732, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533709, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519670, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414885, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533329, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518645, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418031, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534190, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518533, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417924, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535316, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520345, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417152, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532972, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518723, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416941, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535427, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519508, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417219, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534140, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519063, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417934, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533909, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518855, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414106, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535249, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519262, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418275, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533253, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519154, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416972, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534857, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518901, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418018, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534882, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517931, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415913, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535061, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518075, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417967, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533823, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518395, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414360, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532665, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519015, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416401, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533433, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519370, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416253, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535163, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518378, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415195, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533236, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519325, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418230, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534102, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517778, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416781, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533650, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519354, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417571, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534495, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519449, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416650, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533997, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519864, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416848, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532656, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518946, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415104, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533525, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518969, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417719, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533812, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518569, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418491, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534330, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518886, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417774, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533330, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518474, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416273, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534436, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519305, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416580, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535932, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519233, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415482, .5R: -nan, .75R: -nan,  count: 0
+2: 947.747681, 947.747681 avg, 0.000000 rate, 5163.444869 seconds, 256 images
+Loaded: 0.000973 seconds
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533739, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519586, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416959, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532836, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518932, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418679, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533720, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518334, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417505, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.536480, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518402, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419561, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533957, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519842, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417213, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534134, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518674, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415946, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534229, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518308, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416697, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534486, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519318, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418509, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535049, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518538, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417220, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534755, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519182, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418661, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533096, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518522, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417058, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532892, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518793, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417122, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535036, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519096, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415805, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534149, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518841, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417931, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532596, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518847, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418345, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534422, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518771, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417317, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533426, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519303, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417027, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535190, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519145, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418599, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533361, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519337, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415726, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533682, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519717, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414640, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535218, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519678, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417529, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534607, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518487, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419167, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533757, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519310, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417674, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532912, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518773, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417031, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535182, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519350, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418217, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533920, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519142, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419698, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534916, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519011, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415322, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535305, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518648, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416778, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.531391, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519024, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416092, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534253, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519086, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416566, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535093, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518686, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418237, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535372, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519058, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416974, .5R: -nan, .75R: -nan,  count: 0
+4: 948.425171, 947.815430 avg, 0.000000 rate, 5161.728786 seconds, 512 images
+Loaded: 0.001085 seconds
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533669, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518841, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417411, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534857, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518926, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416261, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534694, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518426, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417513, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534348, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517870, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415959, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534457, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519681, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416049, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533813, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518707, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417910, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534249, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519475, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417492, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535336, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518365, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417253, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532528, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519267, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417776, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535757, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518970, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417134, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534400, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518412, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415857, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535825, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519282, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415656, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534049, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519070, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417269, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534242, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518952, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414562, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534169, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518881, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417002, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535298, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519697, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416719, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533582, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519143, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416512, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534511, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520060, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416979, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533690, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518090, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417722, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535845, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518039, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417583, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533529, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519777, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418728, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533886, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518959, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417777, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533828, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519492, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419586, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533938, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519058, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416025, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534917, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518297, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418350, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534127, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519265, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414105, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535799, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518362, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417588, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534419, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518661, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417102, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534494, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520007, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418600, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534174, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519219, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416933, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534350, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519630, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416717, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533684, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518136, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417123, .5R: -nan, .75R: -nan,  count: 0
+6: 947.861267, 947.820007 avg, 0.000000 rate, 5163.782009 seconds, 768 images
+Loaded: 0.007383 seconds
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533241, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517084, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417615, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534797, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518367, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417710, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532278, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518232, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416619, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532920, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519728, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416438, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533525, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519098, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415253, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533965, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518690, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419289, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533926, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518293, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418457, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533727, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519252, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415377, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532334, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519074, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415863, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532996, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518687, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417286, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533900, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519242, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417790, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534514, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519580, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416109, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534255, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518588, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415145, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535147, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519464, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.413974, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534253, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519186, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416221, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534137, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520001, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416940, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534103, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519221, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418301, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532942, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520474, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414664, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534704, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518679, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417748, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534516, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519049, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415331, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532966, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518993, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417154, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535346, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518817, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415588, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534103, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519981, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417128, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534894, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519329, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416099, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533098, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518710, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415924, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533913, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518832, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417783, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534360, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518757, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415029, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532966, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519066, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416820, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534463, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519918, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416505, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534660, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519039, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416168, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534558, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518795, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416676, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533308, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519685, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415920, .5R: -nan, .75R: -nan,  count: 0
+8: 947.421692, 947.780151 avg, 0.000000 rate, 5162.896333 seconds, 1024 images
+Loaded: 0.001045 seconds
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533601, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519211, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416950, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533230, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519108, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418088, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535206, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519320, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415952, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534329, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520116, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417024, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533958, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518965, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417504, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534985, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519023, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415542, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535468, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519133, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414551, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532339, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518804, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416015, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534664, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519771, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416538, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535411, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520379, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415457, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533144, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518285, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416550, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535111, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518882, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417706, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533872, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519284, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415401, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533316, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518540, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418189, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534226, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519676, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415802, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533795, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519038, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417381, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533283, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519896, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415620, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533435, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518567, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418065, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533159, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519327, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414432, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533961, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519254, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414973, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533743, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519425, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416661, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534263, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519448, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415562, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533046, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518363, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417057, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.536022, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519447, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416693, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533767, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519386, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418159, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534759, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518548, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416998, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534534, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518975, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417869, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533844, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517576, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416805, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533353, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519214, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417965, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534048, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520176, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415295, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534713, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519129, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415802, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534475, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518647, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416195, .5R: -nan, .75R: -nan,  count: 0
+10: 947.421143, 947.744263 avg, 0.000000 rate, 5136.995887 seconds, 1280 images
+Loaded: 0.001000 seconds
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533796, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518689, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417727, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533678, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519532, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415756, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532939, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519865, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415471, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533669, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519286, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415841, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534002, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519985, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414658, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532892, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520263, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415787, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533715, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519695, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415782, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534272, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519853, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417724, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533758, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519516, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417492, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533610, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519650, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416736, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534221, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519409, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415169, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534341, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518685, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416877, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533498, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519609, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416307, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534572, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519556, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417878, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532890, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518735, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416418, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533956, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518885, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417468, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532809, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518937, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416734, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532502, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519710, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414692, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534681, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519451, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416478, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533677, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519923, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415947, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533830, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519416, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417163, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533468, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518901, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415618, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534417, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519227, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417458, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535079, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519829, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417889, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533223, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519926, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415812, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533815, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519169, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416636, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535759, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518297, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417414, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534430, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519592, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417349, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534418, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518473, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416159, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533307, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519321, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417655, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534222, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519240, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415286, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532698, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518960, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416609, .5R: -nan, .75R: -nan,  count: 0
+12: 947.937073, 947.763550 avg, 0.000000 rate, 5136.425649 seconds, 1536 images
+Loaded: 0.000973 seconds
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533429, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519908, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417479, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535357, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519435, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416394, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534706, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519063, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417045, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534129, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518148, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417097, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534907, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519680, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415485, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532718, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519329, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417500, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534418, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518667, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415746, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533510, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518784, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414807, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534296, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518044, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415236, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533658, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519186, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417893, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535201, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517870, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416908, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534605, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518763, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416743, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533878, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519096, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416702, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534123, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518116, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417137, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533995, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519740, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416693, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533122, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518259, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415223, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533332, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518760, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.413630, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534106, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519282, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415752, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534575, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519213, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417733, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532958, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518388, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418395, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533196, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519497, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415780, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534500, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518198, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416677, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532261, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519043, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415617, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533505, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518847, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418059, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533145, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519555, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414294, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.536025, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517849, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417336, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532974, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518583, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417054, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533317, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519383, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416872, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534080, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519709, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416162, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533536, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519097, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415991, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534148, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519652, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416373, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533724, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518748, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418012, .5R: -nan, .75R: -nan,  count: 0
+14: 947.094849, 947.696655 avg, 0.000000 rate, 5136.405218 seconds, 1792 images
+Loaded: 0.000317 seconds
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533244, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519265, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415943, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534523, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519480, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415794, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.531677, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519379, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418594, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.536202, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519204, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417558, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535445, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519570, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416564, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533210, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519405, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416955, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534000, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519076, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414835, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533995, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519552, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418133, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532814, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517855, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419910, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534052, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519865, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418476, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534921, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520070, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417484, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535080, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518518, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415826, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533346, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519659, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417274, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533790, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518600, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415705, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535497, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519146, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416931, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.531784, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518342, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417711, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534410, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519886, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416243, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533284, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519209, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417101, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532932, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518997, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416155, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533041, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519641, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419037, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535031, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518959, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415667, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534903, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519619, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419656, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533247, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518293, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416706, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534234, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518147, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418139, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533949, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519546, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416391, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535292, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518505, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417172, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534397, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519086, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416290, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532754, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519038, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417776, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534335, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518752, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418610, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533873, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519384, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415443, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534055, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518436, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416840, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534544, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519174, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416901, .5R: -nan, .75R: -nan,  count: 0
+16: 948.097961, 947.736816 avg, 0.000000 rate, 5134.640474 seconds, 2048 images
+Loaded: 0.000382 seconds
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534877, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519717, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417585, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533639, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519666, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416100, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533906, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518548, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417489, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534240, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519875, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416509, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533692, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518888, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416312, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534877, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519574, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415111, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532869, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518233, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416277, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533761, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518776, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415152, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534224, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518963, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415396, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534951, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519668, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415462, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533548, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518238, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417632, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533193, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518966, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416607, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533202, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519489, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418128, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535265, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518919, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419669, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534117, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519466, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417065, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534279, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518491, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417150, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534033, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519913, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417046, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533600, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519275, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416014, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533089, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520087, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415659, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533720, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518739, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416888, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534981, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519603, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416852, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534910, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518890, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418301, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533347, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518142, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417066, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533723, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518738, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417399, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534089, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519164, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416246, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.531149, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517926, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416035, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533513, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518073, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415919, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534857, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518974, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414941, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533714, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519775, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414773, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535602, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519140, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414402, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534540, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519610, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416214, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532810, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518630, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416449, .5R: -nan, .75R: -nan,  count: 0
+18: 946.885315, 947.651672 avg, 0.000000 rate, 5137.165440 seconds, 2304 images
+Loaded: 0.000959 seconds
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533710, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519456, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416464, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534089, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519124, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416068, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532976, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517883, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419252, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534684, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518607, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416151, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533057, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517776, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417098, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533291, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519071, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415541, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535425, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519695, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415972, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533872, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519176, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417474, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533231, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519503, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416364, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533676, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519267, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417246, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533726, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519039, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415881, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533048, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519201, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415029, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534299, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520030, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416945, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535062, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519750, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416541, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533424, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518989, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417591, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535250, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519118, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417203, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533653, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518798, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417022, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534451, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519083, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416569, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533619, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518800, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416199, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535188, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519166, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417003, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533308, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.520488, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.414512, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534307, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519229, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415009, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535173, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519208, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415761, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534854, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519085, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416962, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533513, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518924, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416078, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532809, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519698, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415736, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533257, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518148, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417316, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532642, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519533, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415342, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534169, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519127, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415293, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533308, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518840, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416834, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534365, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518503, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416018, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533371, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518716, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415559, .5R: -nan, .75R: -nan,  count: 0
+20: 947.220642, 947.608582 avg, 0.000000 rate, 5160.926901 seconds, 2560 images
+Resizing
+608
+Loaded: 0.684702 seconds
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534822, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519337, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417196, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534700, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518225, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418714, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533662, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518693, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418083, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534265, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519011, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416719, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534609, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518276, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415685, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533441, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519030, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416350, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534099, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518727, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418204, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535291, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518158, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416628, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534158, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518954, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417859, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533465, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517808, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418444, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534656, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517852, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419562, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535056, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518251, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419172, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532963, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518441, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415993, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534264, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519357, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416514, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533553, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517953, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419005, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533989, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517555, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.421065, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534903, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518035, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416895, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535574, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519067, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417247, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534739, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519003, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418363, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535862, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517920, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419165, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534101, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517872, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417543, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534364, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517865, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419191, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535422, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518688, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.420756, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534542, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519724, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418001, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534183, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519078, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416617, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534063, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518618, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.422165, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534593, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518173, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419717, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533469, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518801, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418410, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.532747, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518802, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419054, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.536150, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518050, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419360, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533311, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519119, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418642, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535418, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519215, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418314, .5R: -nan, .75R: -nan,  count: 0
+22: 1749.363892, 1027.784058 avg, 0.000000 rate, 9857.270762 seconds, 2816 images
+Loaded: 0.000846 seconds
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535193, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519673, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416496, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535863, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518983, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419684, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534787, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517607, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418894, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533949, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519346, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416261, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534621, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518877, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419014, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535015, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518825, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418048, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534196, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519514, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416539, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535082, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518357, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415798, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535725, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518018, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418085, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534872, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518815, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419616, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533896, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518291, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419498, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533570, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519118, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415061, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535570, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518837, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417263, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534511, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519508, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.415289, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535663, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518896, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419001, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534839, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518782, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418556, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535820, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518383, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419863, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.536945, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518853, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418289, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.536163, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.519077, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.419447, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535726, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517959, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418486, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.534279, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518587, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.417297, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533722, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.517893, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.416353, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.535272, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518945, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418113, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533026, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518220, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.418389, .5R: -nan, .75R: -nan,  count: 0
+Region 82 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.533350, .5R: -nan, .75R: -nan,  count: 0
+Region 94 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.518278, .5R: -nan, .75R: -nan,  count: 0
+Region 106 Avg IOU: -nan, Class: -nan, Obj: -nan, No Obj: 0.slurmstepd: error: *** JOB 3380590 ON pg-gpu02 CANCELLED AT 2019-01-17T05:31:53 DUE TO TIME LIMIT ***
+
+
+###############################################################################
+Peregrine Cluster
+Job 3380590 for user 's2589036'
+Finished at: Thu Jan 17 05:31:56 CET 2019
+
+Job details:
+============
+
+Name                : train
+User                : s2589036
+Partition           : gpu
+Nodes               : pg-gpu02
+Cores               : 12
+State               : CANCELLED,TIMEOUT
+Submit              : 2019-01-16T09:31:44
+Start               : 2019-01-16T09:31:47
+End                 : 2019-01-17T05:31:56
+Reserved walltime   :    20:00:00
+Used walltime       :    20:00:09
+Used CPU time       : 83-09:03:45 (efficiency: 833.67%)
+% User (Computation): 99.57%
+% System (I/O)      :  0.43%
+Mem reserved        : 32G/node
+Max Mem used        : 8.34G (pg-gpu02)
+Max Disk Write      : 20.48K (pg-gpu02)
+Max Disk Read       : 1.01M (pg-gpu02)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################

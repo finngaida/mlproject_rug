@@ -1,0 +1,146 @@
+
+The following have been reloaded with a version change:
+  1) CUDA/9.1.85 => CUDA/9.0.176
+  2) cuDNN/7.0.5-CUDA-9.1.85 => cuDNN/7.1.4.18-CUDA-9.0.176
+
+Requirement already satisfied (use --upgrade to upgrade): numpy in /apps/sandybridge/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/numpy-1.11.1-py3.5-linux-x86_64.egg
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Processing /data/s3801128/retinanet/keras-retinanet
+Exception:
+Traceback (most recent call last):
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/pip-8.1.2-py3.5.egg/pip/basecommand.py", line 215, in main
+    status = self.run(options, args)
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/pip-8.1.2-py3.5.egg/pip/commands/install.py", line 299, in run
+    requirement_set.prepare_files(finder)
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/pip-8.1.2-py3.5.egg/pip/req/req_set.py", line 370, in prepare_files
+    ignore_dependencies=self.ignore_dependencies))
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/pip-8.1.2-py3.5.egg/pip/req/req_set.py", line 587, in _prepare_file
+    session=self.session, hashes=hashes)
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/pip-8.1.2-py3.5.egg/pip/download.py", line 798, in unpack_url
+    unpack_file_url(link, location, download_dir, hashes=hashes)
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/pip-8.1.2-py3.5.egg/pip/download.py", line 676, in unpack_file_url
+    shutil.copytree(link_path, location, symlinks=True)
+  File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/shutil.py", line 353, in copytree
+    raise Error(errors)
+shutil.Error: [('/data/s3801128/retinanet/keras-retinanet/.git/objects/pack/pack-904a3d1bc1d19112242808ac6ba57d4e51044671.pack', '/local/tmp/pip-scds8zc4-build/.git/objects/pack/pack-904a3d1bc1d19112242808ac6ba57d4e51044671.pack', "[Errno 13] Permission denied: '/local/tmp/pip-scds8zc4-build/.git/objects/pack/pack-904a3d1bc1d19112242808ac6ba57d4e51044671.pack'"), ('/data/s3801128/retinanet/keras-retinanet/.git/objects/pack/pack-904a3d1bc1d19112242808ac6ba57d4e51044671.idx', '/local/tmp/pip-scds8zc4-build/.git/objects/pack/pack-904a3d1bc1d19112242808ac6ba57d4e51044671.idx', "[Errno 13] Permission denied: '/local/tmp/pip-scds8zc4-build/.git/objects/pack/pack-904a3d1bc1d19112242808ac6ba57d4e51044671.idx'")]
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting tensorflow-gpu
+  Downloading https://files.pythonhosted.org/packages/0a/b2/eea4d2afb868403dbbc0518e0a62814c59517ab2bff20d5d754ba7984b2c/tensorflow_gpu-1.12.0-cp35-cp35m-manylinux1_x86_64.whl (281.7MB)
+Collecting termcolor>=1.1.0 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz
+Collecting tensorboard<1.13.0,>=1.12.0 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/07/53/8d32ce9471c18f8d99028b7cef2e5b39ea8765bd7ef250ca05b490880971/tensorboard-1.12.2-py3-none-any.whl
+Requirement already satisfied (use --upgrade to upgrade): six>=1.10.0 in /apps/sandybridge/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/six-1.10.0-py3.5.egg (from tensorflow-gpu)
+Collecting wheel>=0.26 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/ff/47/1dfa4795e24fd6f93d5d58602dd716c3f101cfd5a77cd9acbe519b44a0a9/wheel-0.32.3-py2.py3-none-any.whl
+Collecting protobuf>=3.6.1 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/bf/d4/db7296a1407cad69f043537ba1e05afab3646451a066ead7a314d8714388/protobuf-3.6.1-cp35-cp35m-manylinux1_x86_64.whl (1.1MB)
+Collecting keras-applications>=1.0.6 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/3f/c4/2ff40221029f7098d58f8d7fb99b97e8100f3293f9856f0fb5834bef100b/Keras_Applications-1.0.6-py2.py3-none-any.whl
+Collecting grpcio>=1.8.6 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/d9/94/7c634ccc859169ceebca7140532b5267a0b0ed5583e1e624663997786895/grpcio-1.17.1-cp35-cp35m-manylinux1_x86_64.whl (10.1MB)
+Collecting astor>=0.6.0 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/35/6b/11530768cac581a12952a2aad00e1526b89d242d0b9f59534ef6e6a1752f/astor-0.7.1-py2.py3-none-any.whl
+Collecting gast>=0.2.0 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/33/35/f7d7f3d1a63a2b32f1f54bf342ec9af2bb411f2a82d94cf5b88381d9dbd5/gast-0.2.1.post0.tar.gz
+Collecting absl-py>=0.1.6 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/0c/63/f505d2d4c21db849cf80bad517f0065a30be6b006b0a5637f1b95584a305/absl-py-0.6.1.tar.gz
+Collecting numpy>=1.13.3 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/86/04/bd774106ae0ae1ada68c67efe89f1a16b2aa373cc2db15d974002a9f136d/numpy-1.15.4-cp35-cp35m-manylinux1_x86_64.whl (13.8MB)
+Collecting keras-preprocessing>=1.0.5 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/fc/94/74e0fa783d3fc07e41715973435dd051ca89c550881b3454233c39c73e69/Keras_Preprocessing-1.0.5-py2.py3-none-any.whl
+Requirement already satisfied (use --upgrade to upgrade): markdown>=2.6.8 in /apps/sandybridge/software/tensorflow/1.5.0-foss-2016a-Python-3.5.2-CUDA-9.1.85/lib/python3.5/site-packages (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): werkzeug>=0.11.10 in /apps/sandybridge/software/tensorflow/1.5.0-foss-2016a-Python-3.5.2-CUDA-9.1.85/lib/python3.5/site-packages (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+Requirement already satisfied (use --upgrade to upgrade): setuptools in /apps/sandybridge/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg (from protobuf>=3.6.1->tensorflow-gpu)
+Collecting h5py (from keras-applications>=1.0.6->tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/4c/77/c4933e12dca0f61bcdafc207c7532e1250b8d12719459fd85132f3daa9fd/h5py-2.9.0-cp35-cp35m-manylinux1_x86_64.whl (2.8MB)
+Installing collected packages: termcolor, protobuf, grpcio, numpy, wheel, tensorboard, h5py, keras-applications, astor, gast, absl-py, keras-preprocessing, tensorflow-gpu
+  Running setup.py install for termcolor: started
+    Running setup.py install for termcolor: finished with status 'done'
+  Running setup.py install for gast: started
+    Running setup.py install for gast: finished with status 'error'
+    Complete output from command /software/software/Python/3.5.2-foss-2016a/bin/python -u -c "import setuptools, tokenize;__file__='/local/tmp/pip-build-b56ble70/gast/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /local/tmp/pip-uo_9kp93-record/install-record.txt --single-version-externally-managed --compile --user --prefix=:
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+      File "<frozen importlib._bootstrap>", line 664, in _load_unlocked
+      File "<frozen importlib._bootstrap>", line 634, in _load_backward_compatible
+      File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/setuptools/__init__.py", line 11, in <module>
+      File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+      File "<frozen importlib._bootstrap>", line 664, in _load_unlocked
+      File "<frozen importlib._bootstrap>", line 634, in _load_backward_compatible
+      File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/setuptools/extern/__init__.py", line 1, in <module>
+      File "<frozen importlib._bootstrap>", line 969, in _find_and_load
+      File "<frozen importlib._bootstrap>", line 958, in _find_and_load_unlocked
+      File "<frozen importlib._bootstrap>", line 664, in _load_unlocked
+      File "<frozen importlib._bootstrap>", line 634, in _load_backward_compatible
+      File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2927, in <module>
+      File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2913, in _call_aside
+      File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2952, in _initialize_master_working_set
+      File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 956, in subscribe
+      File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2952, in <lambda>
+      File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2515, in activate
+      File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2097, in declare_namespace
+      File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2047, in _handle_ns
+      File "/software/software/Python/3.5.2-foss-2016a/lib/python3.5/site-packages/setuptools-23.1.0-py3.5.egg/pkg_resources/__init__.py", line 2066, in _rebuild_mod_path
+    AttributeError: '_NamespacePath' object has no attribute 'sort'
+    
+    ----------------------------------------
+Command "/software/software/Python/3.5.2-foss-2016a/bin/python -u -c "import setuptools, tokenize;__file__='/local/tmp/pip-build-b56ble70/gast/setup.py';exec(compile(getattr(tokenize, 'open', open)(__file__).read().replace('\r\n', '\n'), __file__, 'exec'))" install --record /local/tmp/pip-uo_9kp93-record/install-record.txt --single-version-externally-managed --compile --user --prefix=" failed with error code 1 in /local/tmp/pip-build-b56ble70/gast/
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+/var/spool/slurmd/job3330851/slurm_script: line 20: retinanet-train: command not found
+
+
+###############################################################################
+Peregrine Cluster
+Job 3330851 for user 's3801128'
+Finished at: Sat Jan 12 02:31:47 CET 2019
+
+Job details:
+============
+
+Name                : Train retinanet multi gpu vgg backbone 500 batch size
+User                : s3801128
+Partition           : gpu
+Nodes               : pg-gpu03
+Cores               : 12
+State               : FAILED
+Submit              : 2019-01-11T15:00:00
+Start               : 2019-01-12T02:30:49
+End                 : 2019-01-12T02:31:47
+Reserved walltime   : 2-00:00:00
+Used walltime       :   00:00:58
+Used CPU time       :   00:41:36 (efficiency: 358.75%)
+% User (Computation): 84.62%
+% System (I/O)      : 15.38%
+Mem reserved        : 8G/node
+Max Mem used        : 1.22G (pg-gpu03)
+Max Disk Write      : 1.05G (pg-gpu03)
+Max Disk Read       : 1.06G (pg-gpu03)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################

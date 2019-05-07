@@ -1,0 +1,127 @@
+Requirement already satisfied: numpy in /home/s3801128/.local/lib/python2.7/site-packages
+You are using pip version 9.0.1, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Processing /data/s3801128/retinanet/keras-retinanet
+  Requirement already satisfied (use --upgrade to upgrade): keras-retinanet==0.5.0 from file:///data/s3801128/retinanet/keras-retinanet in /home/s3801128/.local/lib/python2.7/site-packages
+Requirement already satisfied: keras in /home/s3801128/.local/lib/python2.7/site-packages (from keras-retinanet==0.5.0)
+Requirement already satisfied: keras-resnet in /home/s3801128/.local/lib/python2.7/site-packages (from keras-retinanet==0.5.0)
+Requirement already satisfied: six in /apps/haswell/software/Python/2.7.14-fosscuda-2018a/lib/python2.7/site-packages/six-1.11.0-py2.7.egg (from keras-retinanet==0.5.0)
+Requirement already satisfied: scipy in /apps/haswell/software/Python/2.7.14-fosscuda-2018a/lib/python2.7/site-packages/scipy-1.0.0-py2.7-linux-x86_64.egg (from keras-retinanet==0.5.0)
+Requirement already satisfied: cython in /apps/haswell/software/Python/2.7.14-fosscuda-2018a/lib/python2.7/site-packages/Cython-0.27.3-py2.7-linux-x86_64.egg (from keras-retinanet==0.5.0)
+Requirement already satisfied: Pillow in /home/s3801128/.local/lib/python2.7/site-packages (from keras-retinanet==0.5.0)
+Requirement already satisfied: opencv-python in /home/s3801128/.local/lib/python2.7/site-packages (from keras-retinanet==0.5.0)
+Requirement already satisfied: progressbar2 in /home/s3801128/.local/lib/python2.7/site-packages (from keras-retinanet==0.5.0)
+Requirement already satisfied: keras-preprocessing>=1.0.5 in /home/s3801128/.local/lib/python2.7/site-packages (from keras->keras-retinanet==0.5.0)
+Requirement already satisfied: numpy>=1.9.1 in /home/s3801128/.local/lib/python2.7/site-packages (from keras->keras-retinanet==0.5.0)
+Requirement already satisfied: pyyaml in /home/s3801128/.local/lib/python2.7/site-packages (from keras->keras-retinanet==0.5.0)
+Requirement already satisfied: h5py in /home/s3801128/.local/lib/python2.7/site-packages (from keras->keras-retinanet==0.5.0)
+Requirement already satisfied: keras-applications>=1.0.6 in /home/s3801128/.local/lib/python2.7/site-packages (from keras->keras-retinanet==0.5.0)
+Requirement already satisfied: python-utils>=2.3.0 in /home/s3801128/.local/lib/python2.7/site-packages (from progressbar2->keras-retinanet==0.5.0)
+Building wheels for collected packages: keras-retinanet
+  Running setup.py bdist_wheel for keras-retinanet: started
+  Running setup.py bdist_wheel for keras-retinanet: finished with status 'done'
+  Stored in directory: /home/s3801128/.cache/pip/wheels/a3/05/76/cfd7e1f93ed2b042b6f9958cba0e16972600df08d4509589b8
+Successfully built keras-retinanet
+You are using pip version 9.0.1, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Requirement already satisfied: tensorflow-gpu in /home/s3801128/.local/lib/python2.7/site-packages
+Requirement already satisfied: astor>=0.6.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: keras-preprocessing>=1.0.5 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: gast>=0.2.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: enum34>=1.1.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: protobuf>=3.6.1 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: six>=1.10.0 in /apps/haswell/software/Python/2.7.14-fosscuda-2018a/lib/python2.7/site-packages/six-1.11.0-py2.7.egg (from tensorflow-gpu)
+Requirement already satisfied: absl-py>=0.1.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: backports.weakref>=1.0rc1 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: wheel in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: termcolor>=1.1.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: tensorboard<1.13.0,>=1.12.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: numpy>=1.13.3 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: mock>=2.0.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: keras-applications>=1.0.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: grpcio>=1.8.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: setuptools in /apps/haswell/software/Python/2.7.14-fosscuda-2018a/lib/python2.7/site-packages/setuptools-38.4.0-py2.7.egg (from protobuf>=3.6.1->tensorflow-gpu)
+Requirement already satisfied: markdown>=2.6.8 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+Requirement already satisfied: futures>=3.1.1; python_version < "3" in /home/s3801128/.local/lib/python2.7/site-packages (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+Requirement already satisfied: werkzeug>=0.11.10 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+Requirement already satisfied: funcsigs>=1; python_version < "3.3" in /home/s3801128/.local/lib/python2.7/site-packages (from mock>=2.0.0->tensorflow-gpu)
+Requirement already satisfied: pbr>=0.11 in /apps/haswell/software/Python/2.7.14-fosscuda-2018a/lib/python2.7/site-packages (from mock>=2.0.0->tensorflow-gpu)
+Requirement already satisfied: h5py in /home/s3801128/.local/lib/python2.7/site-packages (from keras-applications>=1.0.6->tensorflow-gpu)
+You are using pip version 9.0.1, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "/home/s3801128/.local/bin/retinanet-train", line 7, in <module>
+    from keras_retinanet.bin.train import main
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras_retinanet/bin/train.py", line 24, in <module>
+    import keras
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/__init__.py", line 3, in <module>
+    from . import utils
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/utils/__init__.py", line 6, in <module>
+    from . import conv_utils
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/utils/conv_utils.py", line 9, in <module>
+    from .. import backend as K
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/backend/__init__.py", line 89, in <module>
+    from .tensorflow_backend import *
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py", line 5, in <module>
+    import tensorflow as tf
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/__init__.py", line 24, in <module>
+    from tensorflow.python import pywrap_tensorflow  # pylint: disable=unused-import
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/__init__.py", line 49, in <module>
+    from tensorflow.python import pywrap_tensorflow
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/pywrap_tensorflow.py", line 74, in <module>
+    raise ImportError(msg)
+ImportError: Traceback (most recent call last):
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/pywrap_tensorflow.py", line 58, in <module>
+    from tensorflow.python.pywrap_tensorflow_internal import *
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 28, in <module>
+    _pywrap_tensorflow_internal = swig_import_helper()
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 24, in swig_import_helper
+    _mod = imp.load_module('_pywrap_tensorflow_internal', fp, pathname, description)
+ImportError: libcublas.so.9.0: cannot open shared object file: No such file or directory
+
+
+Failed to load the native TensorFlow runtime.
+
+See https://www.tensorflow.org/install/errors
+
+for some common reasons and solutions.  Include the entire stack trace
+above this error message when asking for help.
+
+
+###############################################################################
+Peregrine Cluster
+Job 3343470 for user 's3801128'
+Finished at: Mon Jan 14 01:56:44 CET 2019
+
+Job details:
+============
+
+Name                : Train retinanet multi gpu vgg backbone 500 batch size
+User                : s3801128
+Partition           : gpu
+Nodes               : pg-gpu01
+Cores               : 12
+State               : FAILED
+Submit              : 2019-01-14T01:37:48
+Start               : 2019-01-14T01:56:25
+End                 : 2019-01-14T01:56:44
+Reserved walltime   : 00:30:00
+Used walltime       : 00:00:19
+Used CPU time       : 00:00:13 (efficiency:  6.06%)
+% User (Computation): 45.84%
+% System (I/O)      : 54.16%
+Mem reserved        : 8G/node
+Max Mem used        : 0.00  (pg-gpu01)
+Max Disk Write      : 0.00  (pg-gpu01)
+Max Disk Read       : 0.00  (pg-gpu01)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################

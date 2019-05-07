@@ -1,0 +1,1158 @@
+
+The following have been reloaded with a version change:
+  1) CUDA/7.5.18 => CUDA/9.0.176
+  2) cuDNN/5.0-CUDA-7.5.18 => cuDNN/7.1.4.18-CUDA-9.0.176
+
+
+The following have been reloaded with a version change:
+  1) Python/3.5.1-foss-2016a => Python/2.7.11-foss-2016a
+
+Requirement already satisfied (use --upgrade to upgrade): numpy in /apps/sandybridge/software/tensorflow/0.12.1-foss-2016a-Python-3.5.1-CUDA-7.5.18/lib/python3.5/site-packages
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Processing /data/s3801128/retinanet/keras-retinanet
+    Complete output from command python setup.py egg_info:
+    Running from numpy source directory.
+    /local/tmp/easy_install-yvnNva/numpy-1.16.0rc2/setup.py:390: UserWarning: Unrecognized setuptools command, proceeding with generating Cython sources and expanding templates
+      run_build = parse_setuppy_commands()
+    /software/software/Python/2.7.11-foss-2016a/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'python_requires'
+      warnings.warn(msg)
+    /bin/sh: svnversion: command not found
+    /software/software/Python/2.7.11-foss-2016a/lib/python2.7/distutils/dist.py:267: UserWarning: Unknown distribution option: 'define_macros'
+      warnings.warn(msg)
+    _configtest.c:1:5: warning: conflicting types for built-in function 'exp'
+     int exp (void);
+         ^
+    _configtest.c:6: error: undefined reference to 'exp'
+    collect2: error: ld returned 1 exit status
+    _configtest.c:1:5: warning: conflicting types for built-in function 'exp'
+     int exp (void);
+         ^
+    _configtest.c:1:24: fatal error: sys/endian.h: No such file or directory
+     #include <sys/endian.h>
+                            ^
+    compilation terminated.
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 4)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 8)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 8)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 16)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:7:12: error: 'SIZEOF_LONGDOUBLE' undeclared (first use in this function)
+         (void) SIZEOF_LONGDOUBLE;
+                ^
+    _configtest.c:7:12: note: each undeclared identifier is reported only once for each function it appears in
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 16)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 32)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 8)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 8)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 8)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) >= 0)];
+                    ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:16: warning: variable 'test_array' set but not used [-Wunused-but-set-variable]
+         static int test_array [1 - 2 * !(((long) (sizeof (npy_check_sizeof_type))) == 8)];
+                    ^
+    _configtest.c:1:5: warning: conflicting types for built-in function 'exp'
+     int exp (void);
+         ^
+    _configtest.c:6: error: undefined reference to 'exp'
+    collect2: error: ld returned 1 exit status
+    _configtest.c:1:5: warning: conflicting types for built-in function 'exp'
+     int exp (void);
+         ^
+    _configtest.c:1:5: warning: conflicting types for built-in function 'asin'
+     int asin (void);
+         ^
+    _configtest.c:2:5: warning: conflicting types for built-in function 'cos'
+     int cos (void);
+         ^
+    _configtest.c:3:5: warning: conflicting types for built-in function 'log'
+     int log (void);
+         ^
+    _configtest.c:4:5: warning: conflicting types for built-in function 'fabs'
+     int fabs (void);
+         ^
+    _configtest.c:5:5: warning: conflicting types for built-in function 'tanh'
+     int tanh (void);
+         ^
+    _configtest.c:6:5: warning: conflicting types for built-in function 'atan'
+     int atan (void);
+         ^
+    _configtest.c:7:5: warning: conflicting types for built-in function 'acos'
+     int acos (void);
+         ^
+    _configtest.c:8:5: warning: conflicting types for built-in function 'floor'
+     int floor (void);
+         ^
+    _configtest.c:9:5: warning: conflicting types for built-in function 'fmod'
+     int fmod (void);
+         ^
+    _configtest.c:10:5: warning: conflicting types for built-in function 'sqrt'
+     int sqrt (void);
+         ^
+    _configtest.c:11:5: warning: conflicting types for built-in function 'cosh'
+     int cosh (void);
+         ^
+    _configtest.c:12:5: warning: conflicting types for built-in function 'modf'
+     int modf (void);
+         ^
+    _configtest.c:13:5: warning: conflicting types for built-in function 'sinh'
+     int sinh (void);
+         ^
+    _configtest.c:14:5: warning: conflicting types for built-in function 'frexp'
+     int frexp (void);
+         ^
+    _configtest.c:15:5: warning: conflicting types for built-in function 'exp'
+     int exp (void);
+         ^
+    _configtest.c:16:5: warning: conflicting types for built-in function 'tan'
+     int tan (void);
+         ^
+    _configtest.c:17:5: warning: conflicting types for built-in function 'ceil'
+     int ceil (void);
+         ^
+    _configtest.c:18:5: warning: conflicting types for built-in function 'log10'
+     int log10 (void);
+         ^
+    _configtest.c:19:5: warning: conflicting types for built-in function 'sin'
+     int sin (void);
+         ^
+    _configtest.c:20:5: warning: conflicting types for built-in function 'ldexp'
+     int ldexp (void);
+         ^
+    _configtest.c:1:5: warning: conflicting types for built-in function 'log2'
+     int log2 (void);
+         ^
+    _configtest.c:3:5: warning: conflicting types for built-in function 'pow'
+     int pow (void);
+         ^
+    _configtest.c:5:5: warning: conflicting types for built-in function 'exp2'
+     int exp2 (void);
+         ^
+    _configtest.c:6:5: warning: conflicting types for built-in function 'atan2'
+     int atan2 (void);
+         ^
+    _configtest.c:8:5: warning: conflicting types for built-in function 'rint'
+     int rint (void);
+         ^
+    _configtest.c:12:5: warning: conflicting types for built-in function 'cbrt'
+     int cbrt (void);
+         ^
+    _configtest.c:13:5: warning: conflicting types for built-in function 'nextafter'
+     int nextafter (void);
+         ^
+    _configtest.c:14:5: warning: conflicting types for built-in function 'trunc'
+     int trunc (void);
+         ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: statement with no effect [-Wunused-value]
+       __builtin_isnan(5.);
+       ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: statement with no effect [-Wunused-value]
+       __builtin_isinf(5.);
+       ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: statement with no effect [-Wunused-value]
+       __builtin_isfinite(5.);
+       ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: statement with no effect [-Wunused-value]
+       __builtin_bswap32(5u);
+       ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: statement with no effect [-Wunused-value]
+       __builtin_bswap64(5u);
+       ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: statement with no effect [-Wunused-value]
+       __builtin_expect(5, 0);
+       ^
+    _configtest.c: In function 'main':
+    _configtest.c:5:3: warning: implicit declaration of function '__builtin_mul_overflow' [-Wimplicit-function-declaration]
+       __builtin_mul_overflow(5, 5, (int*)5);
+       ^
+    _configtest.c:5: error: undefined reference to '__builtin_mul_overflow'
+    collect2: error: ld returned 1 exit status
+    _configtest.c: In function 'main':
+    _configtest.c:7:16: warning: unused variable 'r' [-Wunused-variable]
+       volatile int r = __builtin_cpu_supports("sse");
+                    ^
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+     ^
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+     ^
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+     ^
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+     ^
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+     ^
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+     ^
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+     ^
+    _configtest.c:5:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     int __declspec(thread) foo;
+         ^
+    _configtest.c: In function '__declspec':
+    _configtest.c:5:24: error: expected declaration specifiers before 'foo'
+     int __declspec(thread) foo;
+                            ^
+    _configtest.c:9:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+     {
+     ^
+    _configtest.c:11:1: error: expected '{' at end of input
+     }
+     ^
+    _configtest.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+     }
+     ^
+    _configtest.c:1:5: warning: conflicting types for built-in function 'cosf'
+     int cosf (void);
+         ^
+    _configtest.c:2:5: warning: conflicting types for built-in function 'coshf'
+     int coshf (void);
+         ^
+    _configtest.c:3:5: warning: conflicting types for built-in function 'rintf'
+     int rintf (void);
+         ^
+    _configtest.c:4:5: warning: conflicting types for built-in function 'fabsf'
+     int fabsf (void);
+         ^
+    _configtest.c:5:5: warning: conflicting types for built-in function 'floorf'
+     int floorf (void);
+         ^
+    _configtest.c:6:5: warning: conflicting types for built-in function 'nextafterf'
+     int nextafterf (void);
+         ^
+    _configtest.c:7:5: warning: conflicting types for built-in function 'tanhf'
+     int tanhf (void);
+         ^
+    _configtest.c:8:5: warning: conflicting types for built-in function 'log10f'
+     int log10f (void);
+         ^
+    _configtest.c:9:5: warning: conflicting types for built-in function 'logf'
+     int logf (void);
+         ^
+    _configtest.c:10:5: warning: conflicting types for built-in function 'sinhf'
+     int sinhf (void);
+         ^
+    _configtest.c:11:5: warning: conflicting types for built-in function 'acosf'
+     int acosf (void);
+         ^
+    _configtest.c:12:5: warning: conflicting types for built-in function 'sqrtf'
+     int sqrtf (void);
+         ^
+    _configtest.c:13:5: warning: conflicting types for built-in function 'ldexpf'
+     int ldexpf (void);
+         ^
+    _configtest.c:14:5: warning: conflicting types for built-in function 'hypotf'
+     int hypotf (void);
+         ^
+    _configtest.c:15:5: warning: conflicting types for built-in function 'log2f'
+     int log2f (void);
+         ^
+    _configtest.c:16:5: warning: conflicting types for built-in function 'exp2f'
+     int exp2f (void);
+         ^
+    _configtest.c:17:5: warning: conflicting types for built-in function 'atanf'
+     int atanf (void);
+         ^
+    _configtest.c:18:5: warning: conflicting types for built-in function 'fmodf'
+     int fmodf (void);
+         ^
+    _configtest.c:19:5: warning: conflicting types for built-in function 'atan2f'
+     int atan2f (void);
+         ^
+    _configtest.c:20:5: warning: conflicting types for built-in function 'cbrtf'
+     int cbrtf (void);
+         ^
+    _configtest.c:21:5: warning: conflicting types for built-in function 'modff'
+     int modff (void);
+         ^
+    _configtest.c:22:5: warning: conflicting types for built-in function 'ceilf'
+     int ceilf (void);
+         ^
+    _configtest.c:23:5: warning: conflicting types for built-in function 'log1pf'
+     int log1pf (void);
+         ^
+    _configtest.c:24:5: warning: conflicting types for built-in function 'asinf'
+     int asinf (void);
+         ^
+    _configtest.c:25:5: warning: conflicting types for built-in function 'copysignf'
+     int copysignf (void);
+         ^
+    _configtest.c:26:5: warning: conflicting types for built-in function 'acoshf'
+     int acoshf (void);
+         ^
+    _configtest.c:27:5: warning: conflicting types for built-in function 'sinf'
+     int sinf (void);
+         ^
+    _configtest.c:28:5: warning: conflicting types for built-in function 'tanf'
+     int tanf (void);
+         ^
+    _configtest.c:29:5: warning: conflicting types for built-in function 'atanhf'
+     int atanhf (void);
+         ^
+    _configtest.c:30:5: warning: conflicting types for built-in function 'truncf'
+     int truncf (void);
+         ^
+    _configtest.c:31:5: warning: conflicting types for built-in function 'asinhf'
+     int asinhf (void);
+         ^
+    _configtest.c:32:5: warning: conflicting types for built-in function 'frexpf'
+     int frexpf (void);
+         ^
+    _configtest.c:33:5: warning: conflicting types for built-in function 'powf'
+     int powf (void);
+         ^
+    _configtest.c:34:5: warning: conflicting types for built-in function 'expf'
+     int expf (void);
+         ^
+    _configtest.c:35:5: warning: conflicting types for built-in function 'expm1f'
+     int expm1f (void);
+         ^
+    _configtest.c:1:5: warning: conflicting types for built-in function 'tanhl'
+     int tanhl (void);
+         ^
+    _configtest.c:2:5: warning: conflicting types for built-in function 'log10l'
+     int log10l (void);
+         ^
+    _configtest.c:3:5: warning: conflicting types for built-in function 'nextafterl'
+     int nextafterl (void);
+         ^
+    _configtest.c:4:5: warning: conflicting types for built-in function 'coshl'
+     int coshl (void);
+         ^
+    _configtest.c:5:5: warning: conflicting types for built-in function 'cosl'
+     int cosl (void);
+         ^
+    _configtest.c:6:5: warning: conflicting types for built-in function 'floorl'
+     int floorl (void);
+         ^
+    _configtest.c:7:5: warning: conflicting types for built-in function 'rintl'
+     int rintl (void);
+         ^
+    _configtest.c:8:5: warning: conflicting types for built-in function 'fabsl'
+     int fabsl (void);
+         ^
+    _configtest.c:9:5: warning: conflicting types for built-in function 'acosl'
+     int acosl (void);
+         ^
+    _configtest.c:10:5: warning: conflicting types for built-in function 'ldexpl'
+     int ldexpl (void);
+         ^
+    _configtest.c:11:5: warning: conflicting types for built-in function 'sqrtl'
+     int sqrtl (void);
+         ^
+    _configtest.c:12:5: warning: conflicting types for built-in function 'logl'
+     int logl (void);
+         ^
+    _configtest.c:13:5: warning: conflicting types for built-in function 'expm1l'
+     int expm1l (void);
+         ^
+    _configtest.c:14:5: warning: conflicting types for built-in function 'hypotl'
+     int hypotl (void);
+         ^
+    _configtest.c:15:5: warning: conflicting types for built-in function 'log2l'
+     int log2l (void);
+         ^
+    _configtest.c:16:5: warning: conflicting types for built-in function 'copysignl'
+     int copysignl (void);
+         ^
+    _configtest.c:17:5: warning: conflicting types for built-in function 'exp2l'
+     int exp2l (void);
+         ^
+    _configtest.c:18:5: warning: conflicting types for built-in function 'atanl'
+     int atanl (void);
+         ^
+    _configtest.c:19:5: warning: conflicting types for built-in function 'frexpl'
+     int frexpl (void);
+         ^
+    _configtest.c:20:5: warning: conflicting types for built-in function 'atan2l'
+     int atan2l (void);
+         ^
+    _configtest.c:21:5: warning: conflicting types for built-in function 'sinhl'
+     int sinhl (void);
+         ^
+    _configtest.c:22:5: warning: conflicting types for built-in function 'fmodl'
+     int fmodl (void);
+         ^
+    _configtest.c:23:5: warning: conflicting types for built-in function 'log1pl'
+     int log1pl (void);
+         ^
+    _configtest.c:24:5: warning: conflicting types for built-in function 'asinl'
+     int asinl (void);
+         ^
+    _configtest.c:25:5: warning: conflicting types for built-in function 'ceill'
+     int ceill (void);
+         ^
+    _configtest.c:26:5: warning: conflicting types for built-in function 'sinl'
+     int sinl (void);
+         ^
+    _configtest.c:27:5: warning: conflicting types for built-in function 'cbrtl'
+     int cbrtl (void);
+         ^
+    _configtest.c:28:5: warning: conflicting types for built-in function 'acoshl'
+     int acoshl (void);
+         ^
+    _configtest.c:29:5: warning: conflicting types for built-in function 'atanhl'
+     int atanhl (void);
+         ^
+    _configtest.c:30:5: warning: conflicting types for built-in function 'tanl'
+     int tanl (void);
+         ^
+    _configtest.c:31:5: warning: conflicting types for built-in function 'truncl'
+     int truncl (void);
+         ^
+    _configtest.c:32:5: warning: conflicting types for built-in function 'powl'
+     int powl (void);
+         ^
+    _configtest.c:33:5: warning: conflicting types for built-in function 'expl'
+     int expl (void);
+         ^
+    _configtest.c:34:5: warning: conflicting types for built-in function 'modfl'
+     int modfl (void);
+         ^
+    _configtest.c:35:5: warning: conflicting types for built-in function 'asinhl'
+     int asinhl (void);
+         ^
+    _configtest.c: In function 'main':
+    _configtest.c:8:12: error: 'HAVE_DECL_SIGNBIT' undeclared (first use in this function)
+         (void) HAVE_DECL_SIGNBIT;
+                ^
+    _configtest.c:8:12: note: each undeclared identifier is reported only once for each function it appears in
+    _configtest.c:1:5: warning: conflicting types for built-in function 'clog'
+     int clog (void);
+         ^
+    _configtest.c:2:5: warning: conflicting types for built-in function 'ctan'
+     int ctan (void);
+         ^
+    _configtest.c:3:5: warning: conflicting types for built-in function 'casinh'
+     int casinh (void);
+         ^
+    _configtest.c:4:5: warning: conflicting types for built-in function 'cacosh'
+     int cacosh (void);
+         ^
+    _configtest.c:5:5: warning: conflicting types for built-in function 'cabs'
+     int cabs (void);
+         ^
+    _configtest.c:6:5: warning: conflicting types for built-in function 'conj'
+     int conj (void);
+         ^
+    _configtest.c:7:5: warning: conflicting types for built-in function 'csqrt'
+     int csqrt (void);
+         ^
+    _configtest.c:8:5: warning: conflicting types for built-in function 'creal'
+     int creal (void);
+         ^
+    _configtest.c:9:5: warning: conflicting types for built-in function 'cproj'
+     int cproj (void);
+         ^
+    _configtest.c:10:5: warning: conflicting types for built-in function 'cpow'
+     int cpow (void);
+         ^
+    _configtest.c:11:5: warning: conflicting types for built-in function 'csinh'
+     int csinh (void);
+         ^
+    _configtest.c:12:5: warning: conflicting types for built-in function 'catan'
+     int catan (void);
+         ^
+    _configtest.c:13:5: warning: conflicting types for built-in function 'ctanh'
+     int ctanh (void);
+         ^
+    _configtest.c:14:5: warning: conflicting types for built-in function 'ccosh'
+     int ccosh (void);
+         ^
+    _configtest.c:15:5: warning: conflicting types for built-in function 'cimag'
+     int cimag (void);
+         ^
+    _configtest.c:16:5: warning: conflicting types for built-in function 'casin'
+     int casin (void);
+         ^
+    _configtest.c:17:5: warning: conflicting types for built-in function 'carg'
+     int carg (void);
+         ^
+    _configtest.c:18:5: warning: conflicting types for built-in function 'csin'
+     int csin (void);
+         ^
+    _configtest.c:19:5: warning: conflicting types for built-in function 'cexp'
+     int cexp (void);
+         ^
+    _configtest.c:20:5: warning: conflicting types for built-in function 'ccos'
+     int ccos (void);
+         ^
+    _configtest.c:21:5: warning: conflicting types for built-in function 'cacos'
+     int cacos (void);
+         ^
+    _configtest.c:22:5: warning: conflicting types for built-in function 'catanh'
+     int catanh (void);
+         ^
+    _configtest.c:1:5: warning: conflicting types for built-in function 'ctanhf'
+     int ctanhf (void);
+         ^
+    _configtest.c:2:5: warning: conflicting types for built-in function 'csinhf'
+     int csinhf (void);
+         ^
+    _configtest.c:3:5: warning: conflicting types for built-in function 'cprojf'
+     int cprojf (void);
+         ^
+    _configtest.c:4:5: warning: conflicting types for built-in function 'cacoshf'
+     int cacoshf (void);
+         ^
+    _configtest.c:5:5: warning: conflicting types for built-in function 'cacosf'
+     int cacosf (void);
+         ^
+    _configtest.c:6:5: warning: conflicting types for built-in function 'cargf'
+     int cargf (void);
+         ^
+    _configtest.c:7:5: warning: conflicting types for built-in function 'cpowf'
+     int cpowf (void);
+         ^
+    _configtest.c:8:5: warning: conflicting types for built-in function 'csinf'
+     int csinf (void);
+         ^
+    _configtest.c:9:5: warning: conflicting types for built-in function 'clogf'
+     int clogf (void);
+         ^
+    _configtest.c:10:5: warning: conflicting types for built-in function 'ccoshf'
+     int ccoshf (void);
+         ^
+    _configtest.c:11:5: warning: conflicting types for built-in function 'conjf'
+     int conjf (void);
+         ^
+    _configtest.c:12:5: warning: conflicting types for built-in function 'casinhf'
+     int casinhf (void);
+         ^
+    _configtest.c:13:5: warning: conflicting types for built-in function 'ccosf'
+     int ccosf (void);
+         ^
+    _configtest.c:14:5: warning: conflicting types for built-in function 'ctanf'
+     int ctanf (void);
+         ^
+    _configtest.c:15:5: warning: conflicting types for built-in function 'cexpf'
+     int cexpf (void);
+         ^
+    _configtest.c:16:5: warning: conflicting types for built-in function 'cimagf'
+     int cimagf (void);
+         ^
+    _configtest.c:17:5: warning: conflicting types for built-in function 'catanhf'
+     int catanhf (void);
+         ^
+    _configtest.c:18:5: warning: conflicting types for built-in function 'casinf'
+     int casinf (void);
+         ^
+    _configtest.c:19:5: warning: conflicting types for built-in function 'catanf'
+     int catanf (void);
+         ^
+    _configtest.c:20:5: warning: conflicting types for built-in function 'csqrtf'
+     int csqrtf (void);
+         ^
+    _configtest.c:21:5: warning: conflicting types for built-in function 'crealf'
+     int crealf (void);
+         ^
+    _configtest.c:22:5: warning: conflicting types for built-in function 'cabsf'
+     int cabsf (void);
+         ^
+    _configtest.c:1:5: warning: conflicting types for built-in function 'csinhl'
+     int csinhl (void);
+         ^
+    _configtest.c:2:5: warning: conflicting types for built-in function 'ctanhl'
+     int ctanhl (void);
+         ^
+    _configtest.c:3:5: warning: conflicting types for built-in function 'cacosl'
+     int cacosl (void);
+         ^
+    _configtest.c:4:5: warning: conflicting types for built-in function 'cacoshl'
+     int cacoshl (void);
+         ^
+    _configtest.c:5:5: warning: conflicting types for built-in function 'cprojl'
+     int cprojl (void);
+         ^
+    _configtest.c:6:5: warning: conflicting types for built-in function 'cargl'
+     int cargl (void);
+         ^
+    _configtest.c:7:5: warning: conflicting types for built-in function 'ccoshl'
+     int ccoshl (void);
+         ^
+    _configtest.c:8:5: warning: conflicting types for built-in function 'conjl'
+     int conjl (void);
+         ^
+    _configtest.c:9:5: warning: conflicting types for built-in function 'csinl'
+     int csinl (void);
+         ^
+    _configtest.c:10:5: warning: conflicting types for built-in function 'clogl'
+     int clogl (void);
+         ^
+    _configtest.c:11:5: warning: conflicting types for built-in function 'cexpl'
+     int cexpl (void);
+         ^
+    _configtest.c:12:5: warning: conflicting types for built-in function 'ccosl'
+     int ccosl (void);
+         ^
+    _configtest.c:13:5: warning: conflicting types for built-in function 'ctanl'
+     int ctanl (void);
+         ^
+    _configtest.c:14:5: warning: conflicting types for built-in function 'cpowl'
+     int cpowl (void);
+         ^
+    _configtest.c:15:5: warning: conflicting types for built-in function 'casinhl'
+     int casinhl (void);
+         ^
+    _configtest.c:16:5: warning: conflicting types for built-in function 'csqrtl'
+     int csqrtl (void);
+         ^
+    _configtest.c:17:5: warning: conflicting types for built-in function 'casinl'
+     int casinl (void);
+         ^
+    _configtest.c:18:5: warning: conflicting types for built-in function 'catanl'
+     int catanl (void);
+         ^
+    _configtest.c:19:5: warning: conflicting types for built-in function 'catanhl'
+     int catanhl (void);
+         ^
+    _configtest.c:20:5: warning: conflicting types for built-in function 'creall'
+     int creall (void);
+         ^
+    _configtest.c:21:5: warning: conflicting types for built-in function 'cabsl'
+     int cabsl (void);
+         ^
+    _configtest.c:22:5: warning: conflicting types for built-in function 'cimagl'
+     int cimagl (void);
+         ^
+    _configtest.c:2:41: error: expected ';', ',' or ')' before 'a'
+     static int static_func (char * restrict a)
+                                             ^
+    _configtest.c:2:12: warning: 'static_func' defined but not used [-Wunused-function]
+     static int static_func (char * __restrict__ a)
+                ^
+    non-existing path in 'numpy/distutils': 'site.cfg'
+    File: build/src.linux-x86_64-2.7/numpy/core/include/numpy/config.h
+    #define HAVE_ENDIAN_H 1
+    #define SIZEOF_PY_INTPTR_T 8
+    #define SIZEOF_OFF_T 8
+    #define SIZEOF_PY_LONG_LONG 8
+    #define MATHLIB m
+    #define HAVE_SIN 1
+    #define HAVE_COS 1
+    #define HAVE_TAN 1
+    #define HAVE_SINH 1
+    #define HAVE_COSH 1
+    #define HAVE_TANH 1
+    #define HAVE_FABS 1
+    #define HAVE_FLOOR 1
+    #define HAVE_CEIL 1
+    #define HAVE_SQRT 1
+    #define HAVE_LOG10 1
+    #define HAVE_LOG 1
+    #define HAVE_EXP 1
+    #define HAVE_ASIN 1
+    #define HAVE_ACOS 1
+    #define HAVE_ATAN 1
+    #define HAVE_FMOD 1
+    #define HAVE_MODF 1
+    #define HAVE_FREXP 1
+    #define HAVE_LDEXP 1
+    #define HAVE_RINT 1
+    #define HAVE_TRUNC 1
+    #define HAVE_EXP2 1
+    #define HAVE_LOG2 1
+    #define HAVE_ATAN2 1
+    #define HAVE_POW 1
+    #define HAVE_NEXTAFTER 1
+    #define HAVE_STRTOLL 1
+    #define HAVE_STRTOULL 1
+    #define HAVE_CBRT 1
+    #define HAVE_STRTOLD_L 1
+    #define HAVE_FALLOCATE 1
+    #define HAVE_BACKTRACE 1
+    #define HAVE_MADVISE 1
+    #define HAVE_XMMINTRIN_H 1
+    #define HAVE_EMMINTRIN_H 1
+    #define HAVE_FEATURES_H 1
+    #define HAVE_XLOCALE_H 1
+    #define HAVE_DLFCN_H 1
+    #define HAVE_SYS_MMAN_H 1
+    #define HAVE___BUILTIN_ISNAN 1
+    #define HAVE___BUILTIN_ISINF 1
+    #define HAVE___BUILTIN_ISFINITE 1
+    #define HAVE___BUILTIN_BSWAP32 1
+    #define HAVE___BUILTIN_BSWAP64 1
+    #define HAVE___BUILTIN_EXPECT 1
+    #define HAVE___BUILTIN_CPU_SUPPORTS 1
+    #define HAVE__M_FROM_INT64 1
+    #define HAVE__MM_LOAD_PS 1
+    #define HAVE__MM_PREFETCH 1
+    #define HAVE__MM_LOAD_PD 1
+    #define HAVE___BUILTIN_PREFETCH 1
+    #define HAVE_LINK_AVX 1
+    #define HAVE_LINK_AVX2 1
+    #define HAVE_XGETBV 1
+    #define HAVE_ATTRIBUTE_OPTIMIZE_UNROLL_LOOPS 1
+    #define HAVE_ATTRIBUTE_OPTIMIZE_OPT_3 1
+    #define HAVE_ATTRIBUTE_NONNULL 1
+    #define HAVE_ATTRIBUTE_TARGET_AVX 1
+    #define HAVE_ATTRIBUTE_TARGET_AVX2 1
+    #define HAVE___THREAD 1
+    #define HAVE_SINF 1
+    #define HAVE_COSF 1
+    #define HAVE_TANF 1
+    #define HAVE_SINHF 1
+    #define HAVE_COSHF 1
+    #define HAVE_TANHF 1
+    #define HAVE_FABSF 1
+    #define HAVE_FLOORF 1
+    #define HAVE_CEILF 1
+    #define HAVE_RINTF 1
+    #define HAVE_TRUNCF 1
+    #define HAVE_SQRTF 1
+    #define HAVE_LOG10F 1
+    #define HAVE_LOGF 1
+    #define HAVE_LOG1PF 1
+    #define HAVE_EXPF 1
+    #define HAVE_EXPM1F 1
+    #define HAVE_ASINF 1
+    #define HAVE_ACOSF 1
+    #define HAVE_ATANF 1
+    #define HAVE_ASINHF 1
+    #define HAVE_ACOSHF 1
+    #define HAVE_ATANHF 1
+    #define HAVE_HYPOTF 1
+    #define HAVE_ATAN2F 1
+    #define HAVE_POWF 1
+    #define HAVE_FMODF 1
+    #define HAVE_MODFF 1
+    #define HAVE_FREXPF 1
+    #define HAVE_LDEXPF 1
+    #define HAVE_EXP2F 1
+    #define HAVE_LOG2F 1
+    #define HAVE_COPYSIGNF 1
+    #define HAVE_NEXTAFTERF 1
+    #define HAVE_CBRTF 1
+    #define HAVE_SINL 1
+    #define HAVE_COSL 1
+    #define HAVE_TANL 1
+    #define HAVE_SINHL 1
+    #define HAVE_COSHL 1
+    #define HAVE_TANHL 1
+    #define HAVE_FABSL 1
+    #define HAVE_FLOORL 1
+    #define HAVE_CEILL 1
+    #define HAVE_RINTL 1
+    #define HAVE_TRUNCL 1
+    #define HAVE_SQRTL 1
+    #define HAVE_LOG10L 1
+    #define HAVE_LOGL 1
+    #define HAVE_LOG1PL 1
+    #define HAVE_EXPL 1
+    #define HAVE_EXPM1L 1
+    #define HAVE_ASINL 1
+    #define HAVE_ACOSL 1
+    #define HAVE_ATANL 1
+    #define HAVE_ASINHL 1
+    #define HAVE_ACOSHL 1
+    #define HAVE_ATANHL 1
+    #define HAVE_HYPOTL 1
+    #define HAVE_ATAN2L 1
+    #define HAVE_POWL 1
+    #define HAVE_FMODL 1
+    #define HAVE_MODFL 1
+    #define HAVE_FREXPL 1
+    #define HAVE_LDEXPL 1
+    #define HAVE_EXP2L 1
+    #define HAVE_LOG2L 1
+    #define HAVE_COPYSIGNL 1
+    #define HAVE_NEXTAFTERL 1
+    #define HAVE_CBRTL 1
+    #define HAVE_DECL_SIGNBIT
+    #define HAVE_COMPLEX_H 1
+    #define HAVE_CABS 1
+    #define HAVE_CACOS 1
+    #define HAVE_CACOSH 1
+    #define HAVE_CARG 1
+    #define HAVE_CASIN 1
+    #define HAVE_CASINH 1
+    #define HAVE_CATAN 1
+    #define HAVE_CATANH 1
+    #define HAVE_CCOS 1
+    #define HAVE_CCOSH 1
+    #define HAVE_CEXP 1
+    #define HAVE_CIMAG 1
+    #define HAVE_CLOG 1
+    #define HAVE_CONJ 1
+    #define HAVE_CPOW 1
+    #define HAVE_CPROJ 1
+    #define HAVE_CREAL 1
+    #define HAVE_CSIN 1
+    #define HAVE_CSINH 1
+    #define HAVE_CSQRT 1
+    #define HAVE_CTAN 1
+    #define HAVE_CTANH 1
+    #define HAVE_CABSF 1
+    #define HAVE_CACOSF 1
+    #define HAVE_CACOSHF 1
+    #define HAVE_CARGF 1
+    #define HAVE_CASINF 1
+    #define HAVE_CASINHF 1
+    #define HAVE_CATANF 1
+    #define HAVE_CATANHF 1
+    #define HAVE_CCOSF 1
+    #define HAVE_CCOSHF 1
+    #define HAVE_CEXPF 1
+    #define HAVE_CIMAGF 1
+    #define HAVE_CLOGF 1
+    #define HAVE_CONJF 1
+    #define HAVE__configtest.c:1:5: warning: conflicting types for built-in function 'exp'
+     int exp (void);
+         ^
+    _configtest.c:6: error: undefined reference to 'exp'
+    collect2: error: ld returned 1 exit status
+    _configtest.c:1:5: warning: conflicting types for built-in function 'exp'
+     int exp (void);
+         ^
+    _configtest.c:3:0: warning: ignoring #pragma clang diagnostic [-Wunknown-pragmas]
+     #pragma clang diagnostic error "-Wattributes"
+     ^
+    _configtest.c:8:1: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+     main()
+     ^
+    CPOWF 1
+    #define HAVE_CPROJF 1
+    #define HAVE_CREALF 1
+    #define HAVE_CSINF 1
+    #define HAVE_CSINHF 1
+    #define HAVE_CSQRTF 1
+    #define HAVE_CTANF 1
+    #define HAVE_CTANHF 1
+    #define HAVE_CABSL 1
+    #define HAVE_CACOSL 1
+    #define HAVE_CACOSHL 1
+    #define HAVE_CARGL 1
+    #define HAVE_CASINL 1
+    #define HAVE_CASINHL 1
+    #define HAVE_CATANL 1
+    #define HAVE_CATANHL 1
+    #define HAVE_CCOSL 1
+    #define HAVE_CCOSHL 1
+    #define HAVE_CEXPL 1
+    #define HAVE_CIMAGL 1
+    #define HAVE_CLOGL 1
+    #define HAVE_CONJL 1
+    #define HAVE_CPOWL 1
+    #define HAVE_CPROJL 1
+    #define HAVE_CREALL 1
+    #define HAVE_CSINL 1
+    #define HAVE_CSINHL 1
+    #define HAVE_CSQRTL 1
+    #define HAVE_CTANL 1
+    #define HAVE_CTANHL 1
+    #define NPY_RESTRICT __restrict__
+    #define NPY_RELAXED_STRIDES_CHECKING 1
+    #define HAVE_LDOUBLE_INTEL_EXTENDED_16_BYTES_LE 1
+    #ifndef __cplusplus
+    /* #undef inline */
+    #endif
+    
+    #ifndef _NPY_NPY_CONFIG_H_
+    #error config.h should never be included directly, include npy_config.h instead
+    #endif
+    
+    EOF
+    File: build/src.linux-x86_64-2.7/numpy/core/include/numpy/_numpyconfig.h
+    #define NPY_HAVE_ENDIAN_H 1
+    #define NPY_SIZEOF_SHORT SIZEOF_SHORT
+    #define NPY_SIZEOF_INT SIZEOF_INT
+    #define NPY_SIZEOF_LONG SIZEOF_LONG
+    #define NPY_SIZEOF_FLOAT 4
+    #define NPY_SIZEOF_COMPLEX_FLOAT 8
+    #define NPY_SIZEOF_DOUBLE 8
+    #define NPY_SIZEOF_COMPLEX_DOUBLE 16
+    #define NPY_SIZEOF_LONGDOUBLE 16
+    #define NPY_SIZEOF_COMPLEX_LONGDOUBLE 32
+    #define NPY_SIZEOF_PY_INTPTR_T 8
+    #define NPY_SIZEOF_OFF_T 8
+    #define NPY_SIZEOF_PY_LONG_LONG 8
+    #define NPY_SIZEOF_LONGLONG 8
+    #define NPY_NO_SMP 0
+    #define NPY_HAVE_DECL_ISNAN
+    #define NPY_HAVE_DECL_ISINF
+    #define NPY_HAVE_DECL_ISFINITE
+    #define NPY_HAVE_DECL_SIGNBIT
+    #define NPY_USE_C99_COMPLEX 1
+    #define NPY_HAVE_COMPLEX_DOUBLE 1
+    #define NPY_HAVE_COMPLEX_FLOAT 1
+    #define NPY_HAVE_COMPLEX_LONG_DOUBLE 1
+    #define NPY_RELAXED_STRIDES_CHECKING 1
+    #define NPY_USE_C99_FORMATS 1
+    #define NPY_VISIBILITY_HIDDEN __attribute__((visibility("hidden")))
+    #define NPY_ABI_VERSION 0x01000009
+    #define NPY_API_VERSION 0x0000000D
+    
+    #ifndef __STDC_FORMAT_MACROS
+    #define __STDC_FORMAT_MACROS 1
+    #endif
+    
+    EOF
+    no previously-included directories found matching 'doc/build'
+    no previously-included directories found matching 'doc/source/generated'
+    no previously-included directories found matching 'benchmarks/env'
+    no previously-included directories found matching 'benchmarks/results'
+    no previously-included directories found matching 'benchmarks/html'
+    no previously-included directories found matching 'benchmarks/numpy'
+    no previously-included directories found matching '*/__pycache__'
+    warning: no previously-included files matching '*.pyo' found anywhere in distribution
+    warning: no previously-included files matching '*.pyd' found anywhere in distribution
+    warning: no previously-included files matching '*.swp' found anywhere in distribution
+    warning: no previously-included files matching '*.bak' found anywhere in distribution
+    warning: no previously-included files matching '*~' found anywhere in distribution
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_casinhf':
+    numpy/core/src/npymath/npy_math_complex.c.src:1445:21: warning: unused variable 'pio2_hi' [-Wunused-variable]
+         const @type@ pio2_hi = NPY_PI_2@c@;
+                         ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1434:30: warning: unused variable 'pio2_lo' [-Wunused-variable]
+         const volatile npy_float pio2_lo = 7.5497899549e-9f;
+                                  ^
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_casinh':
+    numpy/core/src/npymath/npy_math_complex.c.src:1445:22: warning: unused variable 'pio2_hi' [-Wunused-variable]
+         const @type@ pio2_hi = NPY_PI_2@c@;
+                          ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1438:31: warning: unused variable 'pio2_lo' [-Wunused-variable]
+         const volatile npy_double pio2_lo = 6.1232339957367659e-17;
+                                   ^
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_casinhl':
+    numpy/core/src/npymath/npy_math_complex.c.src:1445:26: warning: unused variable 'pio2_hi' [-Wunused-variable]
+         const @type@ pio2_hi = NPY_PI_2@c@;
+                              ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1442:35: warning: unused variable 'pio2_lo' [-Wunused-variable]
+         const volatile npy_longdouble pio2_lo = 2.710505431213761085e-20l;
+                                       ^
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_casinhf':
+    numpy/core/src/npymath/npy_math_complex.c.src:1445:21: warning: unused variable 'pio2_hi' [-Wunused-variable]
+         const @type@ pio2_hi = NPY_PI_2@c@;
+                         ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1434:30: warning: unused variable 'pio2_lo' [-Wunused-variable]
+         const volatile npy_float pio2_lo = 7.5497899549e-9f;
+                                  ^
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_casinh':
+    numpy/core/src/npymath/npy_math_complex.c.src:1445:22: warning: unused variable 'pio2_hi' [-Wunused-variable]
+         const @type@ pio2_hi = NPY_PI_2@c@;
+                          ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1438:31: warning: unused variable 'pio2_lo' [-Wunused-variable]
+         const volatile npy_double pio2_lo = 6.1232339957367659e-17;
+                                   ^
+    numpy/core/src/npymath/npy_math_complex.c.src: In function 'npy_casinhl':
+    numpy/core/src/npymath/npy_math_complex.c.src:1445:26: warning: unused variable 'pio2_hi' [-Wunused-variable]
+         const @type@ pio2_hi = NPY_PI_2@c@;
+                              ^
+    numpy/core/src/npymath/npy_math_complex.c.src:1442:35: warning: unused variable 'pio2_lo' [-Wunused-variable]
+         const volatile npy_longdouble pio2_lo = 2.710505431213761085e-20l;
+                                       ^
+    
+    Installed /local/tmp/pip-LhesC8-build/.eggs/numpy-1.16.0rc2-py2.7-linux-x86_64.egg
+    Traceback (most recent call last):
+      File "<string>", line 1, in <module>
+      File "/local/tmp/pip-LhesC8-build/setup.py", line 66, in <module>
+        setup_requires = ["cython>=0.28", "numpy>=1.14.0"]
+      File "/software/software/Python/2.7.11-foss-2016a/lib/python2.7/distutils/core.py", line 111, in setup
+        _setup_distribution = dist = klass(attrs)
+      File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/setuptools-20.1.1-py3.5.egg/setuptools/dist.py", line 269, in __init__
+      File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/setuptools-20.1.1-py3.5.egg/setuptools/dist.py", line 313, in fetch_build_eggs
+      File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/setuptools-20.1.1-py3.5.egg/pkg_resources/__init__.py", line 825, in resolve
+      File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/setuptools-20.1.1-py3.5.egg/pkg_resources/__init__.py", line 1063, in best_match
+      File "/software/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/setuptools-20.1.1-py3.5.egg/pkg_resources/__init__.py", line 700, in find
+    pkg_resources.VersionConflict: (Cython 0.23.4 (/apps/sandybridge/software/Python/2.7.11-foss-2016a/lib/python2.7/site-packages/Cython-0.23.4-py2.7-linux-x86_64.egg), Requirement.parse('cython>=0.28'))
+    
+    ----------------------------------------
+Command "python setup.py egg_info" failed with error code 1 in /local/tmp/pip-LhesC8-build/
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Collecting tensorflow-gpu
+  Downloading https://files.pythonhosted.org/packages/3d/21/63bf11a6bb4c1c85d52b259578bec20ef6f8894a13870f8f4f8b69635586/tensorflow_gpu-1.12.0-cp27-cp27mu-manylinux1_x86_64.whl (281.7MB)
+Collecting enum34>=1.1.6 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/c5/db/e56e6b4bbac7c4a06de1c50de6fe1ef3810018ae11732a50f15f62c7d050/enum34-1.1.6-py2-none-any.whl
+Collecting keras-preprocessing>=1.0.5 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/fc/94/74e0fa783d3fc07e41715973435dd051ca89c550881b3454233c39c73e69/Keras_Preprocessing-1.0.5-py2.py3-none-any.whl
+Collecting wheel (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/ff/47/1dfa4795e24fd6f93d5d58602dd716c3f101cfd5a77cd9acbe519b44a0a9/wheel-0.32.3-py2.py3-none-any.whl
+Collecting astor>=0.6.0 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/35/6b/11530768cac581a12952a2aad00e1526b89d242d0b9f59534ef6e6a1752f/astor-0.7.1-py2.py3-none-any.whl
+Collecting backports.weakref>=1.0rc1 (from tensorflow-gpu)
+  Downloading https://files.pythonhosted.org/packages/88/ec/f598b633c3d5ffe267aaada57d961c94fdfa183c5c3ebda2b6d151943db6/backports.weakref-1.0.post1-py2.py3-none-any.whl
+Collecting mock>=2.0.0 (from tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/e6/35/f187bdf23be87092bd0f1200d43d23076cee4d0dec109f195173fd3ebc79/mock-2.0.0-py2.py3-none-any.whl (56kB)
+Collecting tensorboard<1.13.0,>=1.12.0 (from tensorflow-gpu)
+  Downloading https://files.pythonhosted.org/packages/51/ae/9840c4837c6f54034ac942b5344396e8c3d74686a9bd29beafdf633cc221/tensorboard-1.12.2-py2-none-any.whl (3.0MB)
+Collecting termcolor>=1.1.0 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/8a/48/a76be51647d0eb9f10e2a4511bf3ffb8cc1e6b14e9e4fab46173aa79f981/termcolor-1.1.0.tar.gz
+Collecting protobuf>=3.6.1 (from tensorflow-gpu)
+  Downloading https://files.pythonhosted.org/packages/b8/c2/b7f587c0aaf8bf2201405e8162323037fe8d17aa21d3c7dda811b8d01469/protobuf-3.6.1-cp27-cp27mu-manylinux1_x86_64.whl (1.1MB)
+Collecting gast>=0.2.0 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/33/35/f7d7f3d1a63a2b32f1f54bf342ec9af2bb411f2a82d94cf5b88381d9dbd5/gast-0.2.1.post0.tar.gz
+Collecting absl-py>=0.1.6 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/0c/63/f505d2d4c21db849cf80bad517f0065a30be6b006b0a5637f1b95584a305/absl-py-0.6.1.tar.gz
+Collecting grpcio>=1.8.6 (from tensorflow-gpu)
+  Downloading https://files.pythonhosted.org/packages/bf/d9/5880e43198f048afbe75348baceafc483e4c3ab657e3e3c1d0b57dacaa0c/grpcio-1.17.1-cp27-cp27mu-manylinux1_x86_64.whl (10.0MB)
+Requirement already satisfied (use --upgrade to upgrade): six>=1.10.0 in /apps/sandybridge/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/six-1.10.0-py3.5.egg (from tensorflow-gpu)
+Collecting keras-applications>=1.0.6 (from tensorflow-gpu)
+  Using cached https://files.pythonhosted.org/packages/3f/c4/2ff40221029f7098d58f8d7fb99b97e8100f3293f9856f0fb5834bef100b/Keras_Applications-1.0.6-py2.py3-none-any.whl
+Collecting numpy>=1.13.3 (from tensorflow-gpu)
+  Downloading https://files.pythonhosted.org/packages/de/37/fe7db552f4507f379d81dcb78e58e05030a8941757b1f664517d581b5553/numpy-1.15.4-cp27-cp27mu-manylinux1_x86_64.whl (13.8MB)
+Collecting funcsigs>=1; python_version < "3.3" (from mock>=2.0.0->tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Cache entry deserialization failed, entry ignored
+  Downloading https://files.pythonhosted.org/packages/69/cb/f5be453359271714c01b9bd06126eaf2e368f1fddfff30818754b5ac2328/funcsigs-1.0.2-py2.py3-none-any.whl
+Requirement already satisfied (use --upgrade to upgrade): pbr>=0.11 in /apps/sandybridge/software/Python/2.7.11-foss-2016a/lib/python2.7/site-packages (from mock>=2.0.0->tensorflow-gpu)
+Collecting futures>=3.1.1; python_version < "3" (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+  Downloading https://files.pythonhosted.org/packages/2d/99/b2c4e9d5a30f6471e410a146232b4118e697fa3ffc06d6a65efde84debd0/futures-3.2.0-py2-none-any.whl
+Collecting werkzeug>=0.11.10 (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/20/c4/12e3e56473e52375aa29c4764e70d1b8f3efa6682bef8d0aae04fe335243/Werkzeug-0.14.1-py2.py3-none-any.whl
+Collecting markdown>=2.6.8 (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+  Cache entry deserialization failed, entry ignored
+  Using cached https://files.pythonhosted.org/packages/7a/6b/5600647404ba15545ec37d2f7f58844d690baf2f81f3a60b862e48f29287/Markdown-3.0.1-py2.py3-none-any.whl
+Requirement already satisfied (use --upgrade to upgrade): setuptools in /apps/sandybridge/software/Python/3.5.1-foss-2016a/lib/python3.5/site-packages/setuptools-20.1.1-py3.5.egg (from protobuf>=3.6.1->tensorflow-gpu)
+Collecting h5py (from keras-applications>=1.0.6->tensorflow-gpu)
+  Downloading https://files.pythonhosted.org/packages/53/08/27e4e9a369321862ffdce80ff1770553e9daec65d98befb2e14e7478b698/h5py-2.9.0-cp27-cp27mu-manylinux1_x86_64.whl (2.8MB)
+Installing collected packages: enum34, numpy, keras-preprocessing, wheel, astor, backports.weakref, funcsigs, mock, futures, grpcio, protobuf, werkzeug, markdown, tensorboard, termcolor, gast, absl-py, h5py, keras-applications, tensorflow-gpu
+  Running setup.py install for termcolor: started
+    Running setup.py install for termcolor: finished with status 'done'
+  Running setup.py install for gast: started
+    Running setup.py install for gast: finished with status 'done'
+  Running setup.py install for absl-py: started
+    Running setup.py install for absl-py: finished with status 'done'
+Successfully installed absl-py astor backports.weakref enum34-1.1.2 funcsigs-0.4 futures gast grpcio h5py keras-applications keras-preprocessing markdown mock-1.3.0 numpy-1.12.0 protobuf-3.1.0 tensorboard tensorflow-gpu termcolor werkzeug wheel
+You are using pip version 8.1.2, however version 18.1 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+/var/spool/slurmd/job3340896/slurm_script: line 22: retinanet-train: command not found
+
+
+###############################################################################
+Peregrine Cluster
+Job 3340896 for user 's3801128'
+Finished at: Sat Jan 12 08:02:10 CET 2019
+
+Job details:
+============
+
+Name                : Train retinanet multi gpu vgg backbone 500 batch size
+User                : s3801128
+Partition           : gpu
+Nodes               : pg-gpu06
+Cores               : 12
+State               : FAILED
+Submit              : 2019-01-12T02:50:43
+Start               : 2019-01-12T07:59:10
+End                 : 2019-01-12T08:02:10
+Reserved walltime   : 2-00:00:00
+Used walltime       :   00:03:00
+Used CPU time       :   05:49:33 (efficiency: 970.97%)
+% User (Computation): 88.72%
+% System (I/O)      : 11.28%
+Mem reserved        : 8G/node
+Max Mem used        : 2.49G (pg-gpu06)
+Max Disk Write      : 1.33G (pg-gpu06)
+Max Disk Read       : 1.51G (pg-gpu06)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################

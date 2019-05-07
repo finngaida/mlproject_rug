@@ -1,0 +1,137 @@
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "GCCcore/4.9.3"
+
+   Try: "module spider GCCcore/4.9.3" to see how to load the module(s).
+
+
+
+
+
+The following have been reloaded with a version change:
+  1) Python/3.6.4-foss-2018a => Python/2.7.14-foss-2018a
+
+Lmod has detected the following error: These module(s) exist but cannot be
+loaded as requested: "GCCcore/4.9.3"
+
+   Try: "module spider GCCcore/4.9.3" to see how to load the module(s).
+
+
+
+
+Collecting numpy==1.14
+  Using cached https://files.pythonhosted.org/packages/0d/8a/e0223a40f980e0442a2045dcf79e4a8a90339593525599a0add318da2428/numpy-1.14.0-cp27-cp27mu-manylinux1_x86_64.whl
+Installing collected packages: numpy
+  Found existing installation: numpy 1.16.1
+    Uninstalling numpy-1.16.1:
+      Successfully uninstalled numpy-1.16.1
+Successfully installed numpy-1.14.0
+You are using pip version 9.0.1, however version 19.0.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Requirement already satisfied: tensorflow-gpu in /home/s3801128/.local/lib/python2.7/site-packages
+Requirement already satisfied: astor>=0.6.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: keras-preprocessing>=1.0.5 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: gast>=0.2.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: enum34>=1.1.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: protobuf>=3.6.1 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: six>=1.10.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: absl-py>=0.1.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: backports.weakref>=1.0rc1 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: wheel in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: termcolor>=1.1.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: tensorboard<1.13.0,>=1.12.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: numpy>=1.13.3 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: mock>=2.0.0 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: keras-applications>=1.0.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: grpcio>=1.8.6 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorflow-gpu)
+Requirement already satisfied: setuptools in /home/s3801128/.local/lib/python2.7/site-packages (from protobuf>=3.6.1->tensorflow-gpu)
+Requirement already satisfied: markdown>=2.6.8 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+Requirement already satisfied: futures>=3.1.1; python_version < "3" in /home/s3801128/.local/lib/python2.7/site-packages (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+Requirement already satisfied: werkzeug>=0.11.10 in /home/s3801128/.local/lib/python2.7/site-packages (from tensorboard<1.13.0,>=1.12.0->tensorflow-gpu)
+Requirement already satisfied: funcsigs>=1; python_version < "3.3" in /home/s3801128/.local/lib/python2.7/site-packages (from mock>=2.0.0->tensorflow-gpu)
+Requirement already satisfied: pbr>=0.11 in /home/s3801128/.local/lib/python2.7/site-packages (from mock>=2.0.0->tensorflow-gpu)
+Requirement already satisfied: h5py in /home/s3801128/.local/lib/python2.7/site-packages (from keras-applications>=1.0.6->tensorflow-gpu)
+You are using pip version 9.0.1, however version 19.0.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Requirement already satisfied: Cython==0.28 in /home/s3801128/.local/lib/python2.7/site-packages
+You are using pip version 9.0.1, however version 19.0.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Requirement already satisfied: configparser in /home/s3801128/.local/lib/python2.7/site-packages
+You are using pip version 9.0.1, however version 19.0.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+running build_ext
+skipping 'keras_retinanet/utils/compute_overlap.c' Cython extension (up-to-date)
+copying build/lib.linux-x86_64-2.7/keras_retinanet/utils/compute_overlap.so -> keras_retinanet/utils
+Using TensorFlow backend.
+Traceback (most recent call last):
+  File "keras_retinanet/bin/evaluate.py", line 21, in <module>
+    import keras
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/__init__.py", line 3, in <module>
+    from . import utils
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/utils/__init__.py", line 6, in <module>
+    from . import conv_utils
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/utils/conv_utils.py", line 9, in <module>
+    from .. import backend as K
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/backend/__init__.py", line 89, in <module>
+    from .tensorflow_backend import *
+  File "/home/s3801128/.local/lib/python2.7/site-packages/keras/backend/tensorflow_backend.py", line 5, in <module>
+    import tensorflow as tf
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/__init__.py", line 24, in <module>
+    from tensorflow.python import pywrap_tensorflow  # pylint: disable=unused-import
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/__init__.py", line 49, in <module>
+    from tensorflow.python import pywrap_tensorflow
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/pywrap_tensorflow.py", line 74, in <module>
+    raise ImportError(msg)
+ImportError: Traceback (most recent call last):
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/pywrap_tensorflow.py", line 58, in <module>
+    from tensorflow.python.pywrap_tensorflow_internal import *
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 28, in <module>
+    _pywrap_tensorflow_internal = swig_import_helper()
+  File "/home/s3801128/.local/lib/python2.7/site-packages/tensorflow/python/pywrap_tensorflow_internal.py", line 24, in swig_import_helper
+    _mod = imp.load_module('_pywrap_tensorflow_internal', fp, pathname, description)
+ImportError: libcublas.so.9.0: cannot open shared object file: No such file or directory
+
+
+Failed to load the native TensorFlow runtime.
+
+See https://www.tensorflow.org/install/errors
+
+for some common reasons and solutions.  Include the entire stack trace
+above this error message when asking for help.
+
+
+###############################################################################
+Peregrine Cluster
+Job 4181100 for user 's3801128'
+Finished at: Wed Feb 13 20:32:22 CET 2019
+
+Job details:
+============
+
+Name                : 101,0.5,Test retinanet 1 gpu resnet101 backbone
+User                : s3801128
+Partition           : gpu
+Nodes               : pg-gpu01
+Cores               : 12
+State               : COMPLETED
+Submit              : 2019-02-13T20:31:34
+Start               : 2019-02-13T20:32:07
+End                 : 2019-02-13T20:32:22
+Reserved walltime   : 01:00:00
+Used walltime       : 00:00:15
+Used CPU time       : 00:00:12 (efficiency:  6.93%)
+% User (Computation): 53.23%
+% System (I/O)      : 46.76%
+Mem reserved        : 8G/node
+Max Mem used        : 0.00  (pg-gpu01)
+Max Disk Write      : 0.00  (pg-gpu01)
+Max Disk Read       : 0.00  (pg-gpu01)
+
+
+Acknowledgements:
+=================
+
+Please see this page if you want to acknowledge Peregrine in your publications:
+
+https://redmine.hpc.rug.nl/redmine/projects/peregrine/wiki/ScientificOutput
+
+################################################################################
