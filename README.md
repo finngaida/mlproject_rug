@@ -9,6 +9,7 @@ In the recent years, automatically analyzing traffic streams has become more and
 ## Relevant links
 
 - [Dataset](http://podoce.dinf.usherbrooke.ca/challenge/dataset/)
+- [Final paper](https://github.com/finngaida/mlproject_rug/raw/master/Analyzing_Traffic_Streams_Using_CNNs%20final.pdf)
 
 
 ## Train Faster R-CNN
